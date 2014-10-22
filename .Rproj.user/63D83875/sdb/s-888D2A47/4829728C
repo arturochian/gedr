@@ -1,12 +1,12 @@
 {
-    "contents" : "---\nlayout: default\n---\n<main class=\"content\">\n    <section class=\"container\">\n    \t<div class=\"row-fluid\">\n    \t\t<article class=\"home-icon\">\n\t\t\t\t<a href=\"{{ baseurl }}\">\n\t\t\t\t\t<i class=\"icon-home\"></i> \n\t\t\t\t</a>\n\t\t\t</article>\n\t\t\t<article class=\"post\">\n\t\t\t\t<h2 class=\"content\">{{page.title}}</h2>\n\t\t\t\t<h5>{{ page.date | date: \"%d %B %Y\" }}</h5>\n\t\t\t\t<section>\n\t\t\t\t\t{{ content }}\n\t\t\t\t\t<hr>\n\t\t\t\t</section>\n\t\t\t\t<section style=\"margin-bottom: 2em;\">\n\t\t\t\t\t{% if page.previous %} \n\t\t\t\t\t\t\t<a rel=\"prev\" class=\"a-hover\"href=\"{{ page.previous.url }}\"><i class=\"icon-arrow-left\"></i> {{ page.previous.title }}</a>\n\t\t\t\t\t\t{% endif %}\n\t\t\t\t\t\t{% if page.next %} \n\t\t\t\t\t\t\t<a rel=\"next\" style=\"float:right\" class=\"a-hover\"href=\"{{ page.next.url }}\">{{ page.next.title }} <i class=\"icon-arrow-right\"></i></a>\n\t\t\t\t\t{% endif %}\n\t\t\t\t</section>\n\t\t\t</article>\n\t\t</div>\n\t</section>\n</main>\n",
+    "contents" : "---\nlayout: default\n---\n<main class=\"content\">\n    <section class=\"container\">\n    \t<div class=\"row-fluid\">\n    \t\t<article class=\"home-icon\">\n\t\t\t\t<a href=\"{{ site.url }}\">\n\t\t\t\t\t<i class=\"icon-home\"></i> \n\t\t\t\t</a>\n\t\t\t</article>\n\t\t\t<article class=\"post\">\n\t\t\t\t<h2 class=\"content\">{{page.title}}</h2>\n\t\t\t\t<h5>{{ page.date | date: \"%d %B %Y\" }}</h5>\n\t\t\t\t<section>\n\t\t\t\t\t{{ content }}\n\t\t\t\t\t<hr>\n\t\t\t\t</section>\n\t\t\t\t<section style=\"margin-bottom: 2em;\">\n\t\t\t\t\t{% if page.previous %} \n\t\t\t\t\t\t\t<a rel=\"prev\" class=\"a-hover\"href=\"{{ page.previous.url }}\"><i class=\"icon-arrow-left\"></i> {{ page.previous.title }}</a>\n\t\t\t\t\t\t{% endif %}\n\t\t\t\t\t\t{% if page.next %} \n\t\t\t\t\t\t\t<a rel=\"next\" style=\"float:right\" class=\"a-hover\"href=\"{{ page.next.url }}\">{{ page.next.title }} <i class=\"icon-arrow-right\"></i></a>\n\t\t\t\t\t{% endif %}\n\t\t\t\t</section>\n\t\t\t</article>\n\t\t</div>\n\t</section>\n</main>\n",
     "created" : 1414008204785.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "4255600558",
+    "hash" : "3989626935",
     "id" : "4829728C",
-    "lastKnownWriteTime" : 1414008440,
+    "lastKnownWriteTime" : 1414008573,
     "path" : "/data/projects/DataInformatics/gedr/_layouts/post_page.html",
     "project_path" : "_layouts/post_page.html",
     "properties" : {
