@@ -12,7 +12,7 @@ title:            'Introduction to R for Gulf Ecology Division'
 tagline:          ''
 description:      ''
 url:              http://jwhollister.com/gedr
-baseurl:          gedr/
+baseurl:          /gedr
 
 author:
   name:           'Jeffrey W. Hollister'

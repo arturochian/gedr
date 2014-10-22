@@ -1,12 +1,12 @@
 {
-    "contents" : "# Dependencies\nmarkdown:         redcarpet\nhighlighter:      pygments\n\n# Permalinks\npermalink:            pretty\npaginate_path:        /page:num\nrelative_permalinks:  true\n\n# Setup\ntitle:            'Introduction to R for Gulf Ecology Division'\ntagline:          ''\ndescription:      ''\nurl:              http://jwhollister.com/gedr\nbaseurl:          gedr/\n\nauthor:\n  name:           'Jeffrey W. Hollister'\n  url:            https://twitter.com/jhollist\n\npaginate:         5\n\ntimezone:         America/New_York\n\n\n#Plugins\ngems:\n- jekyll-mentions\n- jemoji\n- jekyll-redirect-from\n- jekyll-sitemap\n\n\n# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings\n\nauto: true # automatically update your jekyll\nserver: true # runs a local server\nexclude: [\"Gemfile\", \"Gemfile.lock\", \"README.md\", 'sass', 'watch.sh', 'style.scss'] # files to exclude\n\n",
+    "contents" : "# Dependencies\nmarkdown:         redcarpet\nhighlighter:      pygments\n\n# Permalinks\npermalink:            pretty\npaginate_path:        /page:num\nrelative_permalinks:  true\n\n# Setup\ntitle:            'Introduction to R for Gulf Ecology Division'\ntagline:          ''\ndescription:      ''\nurl:              http://jwhollister.com/gedr\nbaseurl:          /gedr\n\nauthor:\n  name:           'Jeffrey W. Hollister'\n  url:            https://twitter.com/jhollist\n\npaginate:         5\n\ntimezone:         America/New_York\n\n\n#Plugins\ngems:\n- jekyll-mentions\n- jemoji\n- jekyll-redirect-from\n- jekyll-sitemap\n\n\n# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings\n\nauto: true # automatically update your jekyll\nserver: true # runs a local server\nexclude: [\"Gemfile\", \"Gemfile.lock\", \"README.md\", 'sass', 'watch.sh', 'style.scss'] # files to exclude\n\n",
     "created" : 1413999759122.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "796831326",
+    "hash" : "2626602600",
     "id" : "C640AA52",
-    "lastKnownWriteTime" : 1414008188,
+    "lastKnownWriteTime" : 1414008701,
     "path" : "/data/projects/DataInformatics/gedr/_config.yml",
     "project_path" : "_config.yml",
     "properties" : {
