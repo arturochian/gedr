@@ -1,7 +1,39 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:            pretty
+paginate_path:        /page:num
+relative_permalinks:  true
+
+# Setup
+title:            'Introduction to R for Gulf Ecology Division'
+tagline:          ''
+description:      ''
+url:              http://jwhollister.com/gedr
+baseurl:          gedr/
+
+author:
+  name:           'Jeffrey W. Hollister'
+  url:            https://twitter.com/jhollist
+
+paginate:         5
+
+timezone:         America/New_York
+
+
+#Plugins
+gems:
+- jekyll-mentions
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
+
+
 # visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
 
 auto: true # automatically update your jekyll
 server: true # runs a local server
-paginate: 10 # pagination basted on number of posts
 exclude: ["Gemfile", "Gemfile.lock", "README.md", 'sass', 'watch.sh', 'style.scss'] # files to exclude
 

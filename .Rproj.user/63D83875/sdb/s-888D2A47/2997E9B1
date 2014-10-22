@@ -1,0 +1,16 @@
+{
+    "contents" : "#!/bin/sh\n\nsass --watch css/style.scss:css/style.css --style compressed\n\nexit 0\n",
+    "created" : 1413999787648.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4086321437",
+    "id" : "2997E9B1",
+    "lastKnownWriteTime" : 1366472015,
+    "path" : "/data/projects/DataInformatics/gedr/watch.sh",
+    "project_path" : "watch.sh",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "sh"
+}

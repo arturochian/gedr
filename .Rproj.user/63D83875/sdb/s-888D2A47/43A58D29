@@ -1,0 +1,16 @@
+{
+    "contents" : "# robotstxt.org/\n\nUser-agent: *\n",
+    "created" : 1413999796325.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1410579809",
+    "id" : "43A58D29",
+    "lastKnownWriteTime" : 1365357854,
+    "path" : "/data/projects/DataInformatics/gedr/robots.txt",
+    "project_path" : "robots.txt",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "text"
+}
