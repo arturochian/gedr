@@ -1,0 +1,24 @@
+---
+title: Proposed Outline For GED R Training
+author: Jeffrey W. Hollister
+---
+
+This is likely to be a working outline and should change some as the discussions progress and the materials develop.  The workshop is designed around my own idea of what a common data analysis workflow would entail: get -> clean -> explore -> visualize -> analyze -> publish.  I hope this to be significantly more hands-on exercises and less show and tell.  After the workshop you won't be an expert but should have the foundation for getting started on your own data analysis work in R and will know where and how to get hlep. 
+
+- Introduction
+ - Getting R and RStudio going
+ - Using packages
+ - Using fucntions
+- Get
+ - Data types and structures in R
+ - Reading data into R
+- Clean
+ - 
+- Explore
+- Visualize
+- Analyze
+- Publish
+- Advanced Topics
+ - Reproducible Research
+ - Creating your own packages
+ 
