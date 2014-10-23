@@ -4,7 +4,7 @@ author: Jeffrey W. Hollister
 layout: post_page
 ---
 
-Over the course of the next two days we are going to walk through a typical data analysis workflow in R.  This is the first lesson.  
+Over the course of the next two days we are going to walk through a typical data analysis workflow in R.  This is the first lesson and we are going to focus on making sure everything is working and some basic orientation in R.  The real fun will start in the lessons to come.  
 
 Our goals for this lesson are:
 
@@ -12,8 +12,9 @@ Our goals for this lesson are:
 - Why would you choose R over another tool
 - Troubleshoot software installs (keep your fingers crossed)
 - Gain familiarity with using R from within the RStudio IDE
-- Be able to install and load a package into your R library
 - Get to know the basic syntax of R functions
+- Be able to install and load a package into your R library
+- Know how to get help
 
 ##What is R
 
@@ -24,5 +25,44 @@ Our goals for this lesson are:
 ##Using functions
 
 ##Using packages
+The base install of R is quite powerful, but you will soon have a need or desire to go beyond this.  Packages provide this ability.  They are a standardized method for extending R with new methods, techniques, and programming functionality.  There is a lot to say about packages regarding finding them, using them, etc., but for now let's focus just on the basics.  
+
+###CRAN
+One of the reasons for R's popularity is CRAN, [The Comprehensive R Archive Network](http://cran.r-project.org/).  This is where you download R and also where most will gain access to packages (there are other places, but that is for later).  Not much else to say about this now other than to be aware or it.
+
+###Installing packages
+When a packages gets installed, that means the source (or packaged binary for Windows) is downloaded and put into your library.  A default library location is set for you so no need to worry about that.  In fact on Windows most of this is pretty automatic.  Let's give it a shot.
+
+```{r remove_examples, echo=FALSE}
+remove.packages(c("ggplot2","dplyr"))
+```
+
+
+```{r install_package}
+#Install dplyr and ggplot2
+install.packages("ggplot2")
+install.packages("dplyr")
+
+#You can also put more than one in like
+install.packages(c("randomForest","formatr"))
+```
+
+###Loading packages
+One source of confusion that many have is when they cannot access a package that they just installed. This is because getting to this point requires an extra step, loading (or attaching) the package.   
+
+```{r load_package}
+#Add libraries to your R Session
+library("ggplot2")
+library("dplyr")
+
+#You can also access functions in a library by using package::function
+randomForest::randomForest
+
+```
+
+You will often see people use `require` to load a package. It is better form to not do this. For a more detailed explanation of why `library()` and not `require()` see [Yihui Xie's post on the subject](http://yihui.name/en/2014/07/library-vs-require/.)
+
+###Some other useful commands
+
 
 ##Help!
