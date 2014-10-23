@@ -21,7 +21,6 @@ author:
 paginate:         10
 
 timezone:         America/New_York
-exclude:          ["*.Rmd"]
 
 #Plugins
 gems:
