@@ -18,10 +18,10 @@ author:
   name:           'Jeffrey W. Hollister'
   url:            https://twitter.com/jhollist
 
-paginate:         5
+paginate:         10
 
 timezone:         America/New_York
-exclude:          ["*.Rmd","Makefile"]
+exclude:          ["*.Rmd"]
 
 #Plugins
 gems:
