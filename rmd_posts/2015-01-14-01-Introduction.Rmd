@@ -63,6 +63,13 @@ randomForest::randomForest
 You will often see people use `require` to load a package. It is better form to not do this. For a more detailed explanation of why `library()` and not `require()` see [Yihui Xie's post on the subject](http://yihui.name/en/2014/07/library-vs-require/.)
 
 ###Some other useful commands
+There are a lot of other commands that help you navigate packages
 
+```{r other_packages}
+#See what is installed installed.packages()
+
+#What is available.packages()
+
+```
 
 ##Help!

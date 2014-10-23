@@ -39,6 +39,10 @@ When a packages gets installed, that means the source (or packaged binary for Wi
 ## (as 'lib' is unspecified)
 ```
 
+```
+## Warning: there is no package called 'ggplot2'
+```
+
 
 
 ```r
@@ -102,6 +106,13 @@ randomForest::randomForest
 You will often see people use `require` to load a package. It is better form to not do this. For a more detailed explanation of why `library()` and not `require()` see [Yihui Xie's post on the subject](http://yihui.name/en/2014/07/library-vs-require/.)
 
 ###Some other useful commands
+There are a lot of other commands that help you navigate packages
 
+
+```r
+#See what is installed installed.packages()
+
+#What is available.packages()
+```
 
 ##Help!
