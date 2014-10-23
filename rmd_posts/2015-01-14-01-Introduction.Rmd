@@ -1,5 +1,5 @@
 ---
-title: 01 - Introduction to R: The basics
+title: "01 - Introduction to R: The basics"
 author: Jeffrey W. Hollister
 layout: post_page
 ---
