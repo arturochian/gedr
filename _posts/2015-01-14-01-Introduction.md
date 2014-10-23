@@ -6,14 +6,22 @@ layout: post_page
 
 Over the course of the next two days we are going to walk through a typical data analysis workflow in R.  This is the first lesson.  
 
+Our goals for this lesson are:
+- Understand what R is and what it can be used for
+- Why would you choose R over another tool
+- Troubleshoot software installs (keep your fingers crossed)
+- Gain familiarity with using R from within the RStudio IDE
+- Be able to install and load a package into your R library
+- Get to know the basic syntax of R functions
+
 ##What is R
 
 ##Why would you want to use it
 
 ##Getting R and RStudio going
 
-##Using packages
-
 ##Using functions
+
+##Using packages
 
 ##Help!
