@@ -7,6 +7,7 @@ layout: post_page
 Over the course of the next two days we are going to walk through a typical data analysis workflow in R.  This is the first lesson.  
 
 Our goals for this lesson are:
+
 - Understand what R is and what it can be used for
 - Why would you choose R over another tool
 - Troubleshoot software installs (keep your fingers crossed)
