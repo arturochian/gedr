@@ -1,6 +1,7 @@
 ---
 title: Proposed Outline For GED R Training
 author: Jeffrey W. Hollister
+layout: post_page
 ---
 
 This is likely to be a working outline and should change some as the discussions progress and the materials develop.  The workshop is designed around my own idea of what a common data analysis workflow would entail: get -> clean -> explore -> visualize -> analyze.  
@@ -9,26 +10,37 @@ I hope this workshop to be more hands-on exercises and less show and tell.  Afte
 
 This outline and way of thinking about teaching R is greatly influenced by both [Software Carpentry](software-carpentry.org) and [Data Carpentry](http://datacarpentry.org/).  I have borrowed a great deal of the materials from both places.
 
-- Introduction
+## Introduction
  - Getting R and RStudio going
  - Using packages
  - Using functions
  - Help!
-- Get
+
+## Get
  - Data types and structures in R
  - Reading data into R
-- Clean
+
+## Clean
  - Subset and Indexing
  - Reshaping and modifying data
-- Explore
+
+## Explore
  - Exploratory data analysis
  - Summary Statistics
-- Visualize
+
+## Visualize
  - Base graphics
  - ggplot2
-- Analyze
+
+## Analyze
  - Some "more advanced" statistics
-- Advanced Topics (time/interest dependent)
+ - ANOVA
+ - regression (linear, logistic)
+ - randomForest
+ - pca
+ - suggestions?
+
+## Advanced Topics (time/interest dependent)
  - Programming with R
  - R as GIS
  - Reproducible Research
