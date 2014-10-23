@@ -1,0 +1,16 @@
+title: Introduction
+author: Jeffrey W. Hollister
+layout: post_page
+---
+
+##What is R
+
+##Why would you want to use it
+
+##Getting R and RStudio going
+
+##Using packages
+
+##Using functions
+
+##Help!
