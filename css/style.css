@@ -9,3 +9,11 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,main,section{di
   text-align: center;
   color: #435F74;
 }
+
+.entries h2 {
+  font-family:'Raleway';
+  font-weight:normal;
+  padding:1.1em 0 0.2em;
+  letter-spacing:0.05em;
+  color:#435F74
+}
