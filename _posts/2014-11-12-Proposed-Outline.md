@@ -34,8 +34,9 @@ For each of the lessons there is a blog post that describes what we are doing, p
 
 ### Clean (10:45 am - 12:00 pm)
 - Using Base R to: 
- - Subset and Indexing
- - Reshape and modify data
+ - Subset
+ - Reshape
+ - Modify
 
 
 ### LUNCH (12:00 pm - 1:00 pm)
