@@ -12,8 +12,4 @@ with EZ Tech to make sure this goes smoothly.
 
 ##RStudio
 
-##Rtools
-
-##Git
-
 ##Strawberry Perl
