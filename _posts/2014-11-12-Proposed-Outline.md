@@ -12,24 +12,29 @@ This outline and way of thinking about teaching R is greatly influenced by both 
 
 For each of the lessons there is a blog post that describes what we are doing, provides some examples and also provides some hands-on exercises.  I have written these as blog posts for use after the workshop.  Additionally, all of the code for each lesson is available as a stand alone R script.  During the workshop we will work mostly from the script.  
 
-#Tentative Schedule
+##Tentative Schedule
 
 ## Wed, January 14, 2015
 
-### Introduction
+### Introduction (8:30 am - 9:30 am)
 - Getting R and RStudio going
 - Using packages
 - Using functions
 - Help!
 
-### Get
+### Get (9:30 am - 10:30 am)
 - Data types and structures in R
 - Reading data into R
+- Where to find data
 
-### Clean
+### BREAK (10:30 am - 10:45 am)
+
+### Clean (10:45 am - 12:00 pm)
 - Subset and Indexing
 - Reshaping and modifying data
 - Base and `dplyr`
+
+### Lunch (12:00 pm - 1:00 pm)
 
 ### Explore
 - Exploratory data analysis
