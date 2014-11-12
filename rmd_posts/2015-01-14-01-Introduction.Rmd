@@ -17,7 +17,9 @@ Our goals for this lesson are:
 - Know how to get help
 
 ##What is R
-
+``` {r}
+plot(rnorm(100),rnorm(100))
+```
 ##Why would you want to use it
 
 ##Getting R and RStudio going

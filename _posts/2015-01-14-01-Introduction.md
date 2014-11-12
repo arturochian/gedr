@@ -18,6 +18,11 @@ Our goals for this lesson are:
 
 ##What is R
 
+```r
+plot(rnorm(100),rnorm(100))
+```
+
+![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-1.png) 
 ##Why would you want to use it
 
 ##Getting R and RStudio going
@@ -35,12 +40,12 @@ When a packages gets installed, that means the source (or packaged binary for Wi
 
 
 ```
-## Removing packages from 'c:/Program Files/R/R-3.1.1/library'
+## Removing packages from '/data/jhollist/R/x86_64-redhat-linux-gnu-library/3.1'
 ## (as 'lib' is unspecified)
 ```
 
 ```
-## Warning: there is no package called 'ggplot2'
+## Warning in find.package(pkgs, lib): there is no package called 'dplyr'
 ```
 
 
@@ -51,7 +56,14 @@ install.packages("ggplot2")
 ```
 
 ```
-## Error: trying to use CRAN without setting a mirror
+## Installing package into '/data/jhollist/R/x86_64-redhat-linux-gnu-library/3.1'
+## (as 'lib' is unspecified)
+```
+
+```
+## 
+## The downloaded source packages are in
+## 	'/tmp/RtmpgGGRwM/downloaded_packages'
 ```
 
 ```r
@@ -59,7 +71,19 @@ install.packages("dplyr")
 ```
 
 ```
-## Error: trying to use CRAN without setting a mirror
+## Installing package into '/data/jhollist/R/x86_64-redhat-linux-gnu-library/3.1'
+## (as 'lib' is unspecified)
+```
+
+```
+## Warning in install.packages("dplyr"): installation of package 'dplyr' had
+## non-zero exit status
+```
+
+```
+## 
+## The downloaded source packages are in
+## 	'/tmp/RtmpgGGRwM/downloaded_packages'
 ```
 
 ```r
@@ -68,7 +92,22 @@ install.packages(c("randomForest","formatr"))
 ```
 
 ```
-## Error: trying to use CRAN without setting a mirror
+## Installing packages into '/data/jhollist/R/x86_64-redhat-linux-gnu-library/3.1'
+## (as 'lib' is unspecified)
+```
+
+```
+## Warning: package 'formatr' is not available (for R version 3.1.1)
+```
+
+```
+## Warning: Perhaps you meant 'formatR' ?
+```
+
+```
+## 
+## The downloaded source packages are in
+## 	'/tmp/RtmpgGGRwM/downloaded_packages'
 ```
 
 ###Loading packages
@@ -81,7 +120,7 @@ library("ggplot2")
 ```
 
 ```
-## Error: there is no package called 'ggplot2'
+## Loading required package: methods
 ```
 
 ```r
@@ -89,7 +128,7 @@ library("dplyr")
 ```
 
 ```
-## Error: there is no package called 'dplyr'
+## Error in library("dplyr"): there is no package called 'dplyr'
 ```
 
 ```r

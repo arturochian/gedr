@@ -5,16 +5,15 @@ layout: post_page
 ---
 
 Prior to the start of the workshop everyone will need to have had the software 
-installed and tested.  Install of R, RStudio and Strawberry Perl does not require a open source software form.  EZ Tech has it set up so that they can simply push the install, remotely, to your machines.  The current installs via this method are a bit dated.  The process has been started to update these and hopefully the most recent versions of all the required software will be available from EZ Tech in a few weeks.
+installed.  Details on what needs to be installed are below.  We may have to work
+with EZ Tech to make sure this goes smoothly.
 
-Once we have the attendees for the workshop finalized, we will collect names and make a single request for everyone to have R, RStudio and Strawberry Perl updated and/or installed.  As soon as we know this has happened, it would be great to make sure it works for everyone.  Follow the instructions below to test your installation.
+##R
 
-## Open RStudio
+##RStudio
 
-## Find "Conosle" window
+##Rtools
 
-## Copy and paste the code
+##Git
 
-## It should say...
-
-
+##Strawberry Perl
