@@ -1,5 +1,5 @@
 ---
-title: Proposed Outline For GED R Training
+title: GED R Workshop Outline
 author: Jeffrey W. Hollister
 layout: post_page
 ---
@@ -10,39 +10,43 @@ I hope this workshop to be more hands-on exercises and less show and tell.  Afte
 
 This outline and way of thinking about teaching R is greatly influenced by both [Software Carpentry](software-carpentry.org) and [Data Carpentry](http://datacarpentry.org/).  I have borrowed a great deal of the materials from both places.
 
-## Introduction
- - Getting R and RStudio going
- - Using packages
- - Using functions
- - Help!
+For each of the lessons there is a blog post that describes what we are doing, provides some examples and also provides some hands-on exercises.  I have written these as blog posts for use after the workshop.  Additionally, all of the code for each lesson is available as a stand alone R script.  During the workshop we will work mostly from the script.  
 
-## Get
- - Data types and structures in R
- - Reading data into R
+#Tentative Schedule
 
-## Clean
- - Subset and Indexing
- - Reshaping and modifying data
+## Wed, January 14, 2015
 
-## Explore
- - Exploratory data analysis
- - Summary Statistics
+### Introduction
+- Getting R and RStudio going
+- Using packages
+- Using functions
+- Help!
 
-## Visualize
- - Base graphics
- - ggplot2
+### Get
+- Data types and structures in R
+- Reading data into R
 
-## Analyze
- - Some "more advanced" statistics
- - ANOVA
- - regression (linear, logistic)
- - randomForest
- - pca
- - suggestions?
+### Clean
+- Subset and Indexing
+- Reshaping and modifying data
+- Base and `dplyr`
 
-## Advanced Topics (time/interest dependent)
- - Programming with R
- - R as GIS
- - Reproducible Research
- - Creating your own packages
+### Explore
+- Exploratory data analysis
+- Summary Statistics
+
+## Thursday, January 15, 2015
+
+### Analyze
+- Base statistics
+- Contributed Packages - Example with Random Forest
+
+### Visualize
+- Base graphics
+- ggplot2
+
+### Advanced Topics (time/interest dependent)
+- Show and Tell: R as GIS
+- Reproducible Research with Rstudio
+ 
  
