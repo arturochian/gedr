@@ -11,7 +11,8 @@ Once we have the attendees for the workshop finalized, we will collect names and
 
 ## Open RStudio
 Once installed, RStudio should be accessible from the start menu.  Start up RStudio.  Once running it should look something like:
-![RStudio Window](figure/rstudio.png)
+
+![RStudio Window](/gedr/figure/rstudio.png)
 
 ## Find "Conosle" window
 

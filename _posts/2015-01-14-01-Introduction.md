@@ -22,7 +22,7 @@ Our goals for this lesson are:
 plot(rnorm(100),rnorm(100))
 ```
 
-![plot of chunk unnamed-chunk-1](/figure/unnamed-chunk-1-1.png) 
+![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-1.png) 
 ##Why would you want to use it
 
 ##Getting R and RStudio going
@@ -63,7 +63,7 @@ install.packages("ggplot2")
 ```
 ## 
 ## The downloaded source packages are in
-## 	'/tmp/RtmpYd5yCk/downloaded_packages'
+## 	'/tmp/RtmpOr1yGw/downloaded_packages'
 ```
 
 ```r
@@ -83,7 +83,7 @@ install.packages("dplyr")
 ```
 ## 
 ## The downloaded source packages are in
-## 	'/tmp/RtmpYd5yCk/downloaded_packages'
+## 	'/tmp/RtmpOr1yGw/downloaded_packages'
 ```
 
 ```r
@@ -107,7 +107,7 @@ install.packages(c("randomForest","formatr"))
 ```
 ## 
 ## The downloaded source packages are in
-## 	'/tmp/RtmpYd5yCk/downloaded_packages'
+## 	'/tmp/RtmpOr1yGw/downloaded_packages'
 ```
 
 ###Loading packages
