@@ -23,16 +23,16 @@ By default the console window will be on the left side of RStudio.  Find that wi
 Click in the window and paste in the code from below:
 
 
-```r
+{% highlight r %}
 version$version.string
-```
+{% endhighlight %}
 
 ## It should say...
 
 
-```
+{% highlight text %}
 ## [1] "R version 3.1.2 (2014-10-31)"
-```
+{% endhighlight %}
 
 
 

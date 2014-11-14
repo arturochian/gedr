@@ -37,67 +37,76 @@ When a packages gets installed, that means the source (or packaged binary for Wi
 
 
 
-```r
+{% highlight r %}
 #Install dplyr and ggplot2
 install.packages("ggplot2")
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## package 'ggplot2' successfully unpacked and MD5 sums checked
 ## 
 ## The downloaded binary packages are in
-## 	C:\Users\JHollist\AppData\Local\Temp\1\RtmpO0wk7b\downloaded_packages
-```
+## 	C:\Users\JHollist\AppData\Local\Temp\1\RtmpQB1kxW\downloaded_packages
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 install.packages("dplyr")
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## package 'dplyr' successfully unpacked and MD5 sums checked
 ## 
 ## The downloaded binary packages are in
-## 	C:\Users\JHollist\AppData\Local\Temp\1\RtmpO0wk7b\downloaded_packages
-```
+## 	C:\Users\JHollist\AppData\Local\Temp\1\RtmpQB1kxW\downloaded_packages
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 #You can also put more than one in like
-install.packages(c("randomForest","formatr"))
-```
+install.packages(c("randomForest","formatR"))
+{% endhighlight %}
 
-```
-## Warning: package 'formatr' is not available (for R version 3.1.2)
-```
 
-```
-## Warning: Perhaps you meant 'formatR' ?
-```
 
-```
+{% highlight text %}
 ## package 'randomForest' successfully unpacked and MD5 sums checked
+## package 'formatR' successfully unpacked and MD5 sums checked
 ## 
 ## The downloaded binary packages are in
-## 	C:\Users\JHollist\AppData\Local\Temp\1\RtmpO0wk7b\downloaded_packages
-```
+## 	C:\Users\JHollist\AppData\Local\Temp\1\RtmpQB1kxW\downloaded_packages
+{% endhighlight %}
 
 ###Loading packages
 One source of confusion that many have is when they cannot access a package that they just installed. This is because getting to this point requires an extra step, loading (or attaching) the package.   
 
 
-```r
+{% highlight r %}
 #Add libraries to your R Session
 library("ggplot2")
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Loading required package: methods
-```
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 library("dplyr")
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## 
 ## Attaching package: 'dplyr'
 ## 
@@ -108,18 +117,22 @@ library("dplyr")
 ## The following objects are masked from 'package:base':
 ## 
 ##     intersect, setdiff, setequal, union
-```
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 #You can also access functions in a library by using package::function
 randomForest::randomForest
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## function (x, ...) 
 ## UseMethod("randomForest")
 ## <environment: namespace:randomForest>
-```
+{% endhighlight %}
 
 You will often see people use `require` to load a package. It is better form to not do this. For a more detailed explanation of why `library()` and not `require()` see [Yihui Xie's post on the subject](http://yihui.name/en/2014/07/library-vs-require/.)
 
@@ -127,10 +140,10 @@ You will often see people use `require` to load a package. It is better form to 
 There are a lot of other commands that help you navigate packages
 
 
-```r
+{% highlight r %}
 #See what is installed installed.packages()
 
 #What is available.packages()
-```
+{% endhighlight %}
 
 ##Help!

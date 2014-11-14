@@ -44,7 +44,7 @@ install.packages("ggplot2")
 install.packages("dplyr")
 
 #You can also put more than one in like
-install.packages(c("randomForest","formatr"))
+install.packages(c("randomForest","formatR"))
 ```
 
 ###Loading packages
