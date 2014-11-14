@@ -5,7 +5,7 @@ all: $(MDS)
 
 %.md: %.Rmd    
 	Rscript -e "source('knit_it.R'); knit_it('$<')"
-	mv $@ ../_posts/.
+	cp $@ ../_posts/.
 
 git: $(POSTDIR)	
 	git add -A :/

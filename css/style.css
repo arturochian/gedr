@@ -15,9 +15,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,main,section{di
   font-weight:normal;
   padding:1.1em 0 0.2em;
   letter-spacing:0.05em;
- 
-  font-size: 1.75em;
-  font-weight: bold;
+  font-size: 1.20em;
 }
 
 .entries h2 {

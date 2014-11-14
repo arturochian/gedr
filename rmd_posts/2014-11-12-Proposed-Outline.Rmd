@@ -29,7 +29,7 @@ For each of the lessons there is a blog post that describes what we are doing, p
 - Where to find data
 
 
-### BREAK (10:30 am - 10:45 am)
+#### Break (10:30 am - 10:45 am)
 
 
 ### Clean (10:45 am - 12:00 pm)
@@ -39,7 +39,7 @@ For each of the lessons there is a blog post that describes what we are doing, p
  - Modify
 
 
-### LUNCH (12:00 pm - 1:00 pm)
+#### Lunch (12:00 pm - 1:00 pm)
 
 
 ### Clean (1:00 pm - 2:30 pm)
@@ -47,7 +47,7 @@ For each of the lessons there is a blog post that describes what we are doing, p
 - Pipes
 
 
-### BREAK (2:30 pm - 2:45 pm)
+#### Break (2:30 pm - 2:45 pm)
 
 
 ### Explore (2:45 pm - 4:30 pm)
@@ -63,21 +63,21 @@ For each of the lessons there is a blog post that describes what we are doing, p
 - Contributed Packages - Example with Random Forest
 
 
-### BREAK (10:30 am - 10:45 am)
+#### Break (10:30 am - 10:45 am)
 
 
 ### Visualize (10:45 am - 12:00 pm)
 - Base graphics
 
 
-### LUNCH (12:00 pm - 1:00 pm)
+#### Lunch (12:00 pm - 1:00 pm)
 
 
 ### Visualize (1:00 pm - 2:30 pm)
 - `ggplot2`
 
 
-### BREAK (2:30 pm - 2:45 pm)
+#### Break (2:30 pm - 2:45 pm)
 
 
 ### Advanced Topics (2:45 pm - 4:30 pm)
