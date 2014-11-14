@@ -31,7 +31,7 @@ version$version.string
 
 
 ```
-## [1] "R version 3.1.2 (2014-10-31)"
+## [1] "R version 3.1.1 (2014-07-10)"
 ```
 
 
