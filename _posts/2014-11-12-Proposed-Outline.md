@@ -16,14 +16,14 @@ For each of the lessons there is a blog post that describes what we are doing, p
 
 ## Wed, January 14, 2015
 
-### Introduction (8:30 am - 9:15 am)
+### 01 - Introduction (8:30 am - 9:15 am)
 - Getting R and RStudio going
 - Using packages
 - Using functions
 - Help!
 
 
-### Get (9:15 am - 10:30 am)
+### 02 - Get (9:15 am - 10:30 am)
 - Data types and structures in R
 - Reading data into R
 - Where to find data
@@ -32,7 +32,7 @@ For each of the lessons there is a blog post that describes what we are doing, p
 #### Break (10:30 am - 10:45 am)
 
 
-### Clean (10:45 am - 12:00 pm)
+### 03 - Clean (10:45 am - 12:00 pm)
 - Using Base R to: 
  - Subset
  - Reshape
@@ -42,7 +42,7 @@ For each of the lessons there is a blog post that describes what we are doing, p
 #### Lunch (12:00 pm - 1:00 pm)
 
 
-### Clean (1:00 pm - 2:30 pm)
+### 04 - Clean (1:00 pm - 2:30 pm)
 - `dplyr`  
 - Pipes
 
@@ -50,7 +50,7 @@ For each of the lessons there is a blog post that describes what we are doing, p
 #### Break (2:30 pm - 2:45 pm)
 
 
-### Explore (2:45 pm - 4:30 pm)
+### 05 - Explore (2:45 pm - 4:30 pm)
 - Exploratory data analysis
 - Summary Statistics
 
@@ -58,7 +58,7 @@ For each of the lessons there is a blog post that describes what we are doing, p
 ## Thursday, January 15, 2015
 
 
-### Analyze (8:30 am - 10:30 am)
+### 06 - Analyze (8:30 am - 10:30 am)
 - Base statistics
 - Contributed Packages - Example with Random Forest
 
@@ -66,21 +66,21 @@ For each of the lessons there is a blog post that describes what we are doing, p
 #### Break (10:30 am - 10:45 am)
 
 
-### Visualize (10:45 am - 12:00 pm)
+### 07 - Visualize (10:45 am - 12:00 pm)
 - Base graphics
 
 
 #### Lunch (12:00 pm - 1:00 pm)
 
 
-### Visualize (1:00 pm - 2:30 pm)
+### 08 - Visualize (1:00 pm - 2:30 pm)
 - `ggplot2`
 
 
 #### Break (2:30 pm - 2:45 pm)
 
 
-### Advanced Topics (2:45 pm - 4:30 pm)
+### 09 - Advanced Topics (2:45 pm - 4:30 pm)
 - Show and Tell: R as GIS
 - Reproducible Research with Rstudio
 - Requests
