@@ -4,6 +4,8 @@ author: Jeffrey W. Hollister
 layout: post_page
 ---
 
+
+
 Over the course of the next two days we are going to walk through a typical data analysis workflow in R.  This is the first lesson and we are going to focus on making sure everything is working and some basic orientation in R.  The real fun will start in the lessons to come.  
 
 Our goals for this lesson are:
@@ -34,12 +36,6 @@ One of the reasons for R's popularity is CRAN, [The Comprehensive R Archive Netw
 When a packages gets installed, that means the source (or packaged binary for Windows) is downloaded and put into your library.  A default library location is set for you so no need to worry about that.  In fact on Windows most of this is pretty automatic.  Let's give it a shot.
 
 
-```
-## Removing packages from 'c:/Program Files/R/R-3.1.2/library'
-## (as 'lib' is unspecified)
-```
-
-
 
 ```r
 #Install dplyr and ggplot2
@@ -47,7 +43,10 @@ install.packages("ggplot2")
 ```
 
 ```
-## Error in contrib.url(repos, "source"): trying to use CRAN without setting a mirror
+## package 'ggplot2' successfully unpacked and MD5 sums checked
+## 
+## The downloaded binary packages are in
+## 	C:\Users\JHollist\AppData\Local\Temp\1\RtmpO0wk7b\downloaded_packages
 ```
 
 ```r
@@ -55,7 +54,10 @@ install.packages("dplyr")
 ```
 
 ```
-## Error in contrib.url(repos, "source"): trying to use CRAN without setting a mirror
+## package 'dplyr' successfully unpacked and MD5 sums checked
+## 
+## The downloaded binary packages are in
+## 	C:\Users\JHollist\AppData\Local\Temp\1\RtmpO0wk7b\downloaded_packages
 ```
 
 ```r
@@ -64,7 +66,18 @@ install.packages(c("randomForest","formatr"))
 ```
 
 ```
-## Error in contrib.url(repos, "source"): trying to use CRAN without setting a mirror
+## Warning: package 'formatr' is not available (for R version 3.1.2)
+```
+
+```
+## Warning: Perhaps you meant 'formatR' ?
+```
+
+```
+## package 'randomForest' successfully unpacked and MD5 sums checked
+## 
+## The downloaded binary packages are in
+## 	C:\Users\JHollist\AppData\Local\Temp\1\RtmpO0wk7b\downloaded_packages
 ```
 
 ###Loading packages
@@ -77,7 +90,7 @@ library("ggplot2")
 ```
 
 ```
-## Error in library("ggplot2"): there is no package called 'ggplot2'
+## Loading required package: methods
 ```
 
 ```r
@@ -85,7 +98,16 @@ library("dplyr")
 ```
 
 ```
-## Error in library("dplyr"): there is no package called 'dplyr'
+## 
+## Attaching package: 'dplyr'
+## 
+## The following object is masked from 'package:stats':
+## 
+##     filter
+## 
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
 ```
 
 ```r
