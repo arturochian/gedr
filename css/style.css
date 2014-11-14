@@ -18,6 +18,13 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,main,section{di
   font-size: 1.20em;
 }
 
+.post h4 {
+  font-weight:normal;
+  padding:1.0em 0 0.1em;
+  letter-spacing:0.04em;
+  font-size: 1em;
+}
+
 .entries h2 {
   font-family:'Raleway';
   font-weight:normal;
