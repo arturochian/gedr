@@ -46,8 +46,7 @@ When a packages gets installed, that means the source (or packaged binary for Wi
 ```
 
 ```
-## Warning in remove.packages :
-##   there is no package called 'dplyr'
+## Warning in find.package(pkgs, lib): there is no package called 'dplyr'
 ```
 
 
@@ -65,7 +64,7 @@ install.packages("ggplot2")
 ```
 ## 
 ## The downloaded source packages are in
-## 	'/tmp/RtmpzzdT6g/downloaded_packages'
+## 	'/tmp/Rtmpmz2SUz/downloaded_packages'
 ```
 
 ```r
@@ -78,11 +77,14 @@ install.packages("dplyr")
 ```
 
 ```
-## Warning in install.packages :
-##   installation of package 'dplyr' had non-zero exit status
+## Warning in install.packages("dplyr"): installation of package 'dplyr' had
+## non-zero exit status
+```
+
+```
 ## 
 ## The downloaded source packages are in
-## 	'/tmp/RtmpzzdT6g/downloaded_packages'
+## 	'/tmp/Rtmpmz2SUz/downloaded_packages'
 ```
 
 ```r
@@ -96,13 +98,17 @@ install.packages(c("randomForest","formatr"))
 ```
 
 ```
-## Warning in install.packages :
-##   package 'formatr' is not available (for R version 3.1.1)
-## Warning in install.packages :
-##   Perhaps you meant 'formatR' ?
+## Warning: package 'formatr' is not available (for R version 3.1.1)
+```
+
+```
+## Warning: Perhaps you meant 'formatR' ?
+```
+
+```
 ## 
 ## The downloaded source packages are in
-## 	'/tmp/RtmpzzdT6g/downloaded_packages'
+## 	'/tmp/Rtmpmz2SUz/downloaded_packages'
 ```
 
 ###Loading packages
@@ -112,6 +118,13 @@ One source of confusion that many have is when they cannot access a package that
 ```r
 #Add libraries to your R Session
 library("ggplot2")
+```
+
+```
+## Loading required package: methods
+```
+
+```r
 library("dplyr")
 ```
 
