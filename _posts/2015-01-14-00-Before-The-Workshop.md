@@ -15,9 +15,24 @@ Once installed, RStudio should be accessible from the start menu.  Start up RStu
 ![RStudio Window](/gedr/figure/rstudio.png)
 
 ## Find "Conosle" window
+By default the console window will be on the left side of RStudio.  Find that window.  It will looking something like:  
+
+![RStudio Console](/gedr/figure/rstudio_console.png)
 
 ## Copy and paste the code
+Click in the window and paste in the code from below:
+
+
+```r
+version$version.string
+```
 
 ## It should say...
+
+
+```
+## [1] "R version 3.1.1 (2014-07-10)"
+```
+
 
 
