@@ -4,9 +4,6 @@ author: Jeffrey W. Hollister
 layout: post_page
 ---
 
-```
-## Error in eval(expr, envir, enclos): object 'opts_knit' not found
-```
 This is likely to be a working outline and should change some as the discussions progress and the materials develop.  The workshop is designed around my own idea of what a common data analysis workflow would entail: get -> clean -> explore -> visualize -> analyze.  
 
 I hope this workshop to be more hands-on exercises and less show and tell.  After the workshop you won't be an expert but should have the foundation for getting started on your own data analysis work in R and will know where and how to get help. 
