@@ -3,4 +3,4 @@ MDS := $(patsubst %.Rmd,%.md,$(wildcard *.Rmd))
 all: $(MDS)
 
 %.md: %.Rmd    
-	Rscript -e "knitr::knit('$<', output='../_posts/$@')"
+	Rscript -e "source('knit_it.R'); knit_it('$<')"

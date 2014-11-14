@@ -17,9 +17,12 @@ Our goals for this lesson are:
 - Know how to get help
 
 ##What is R
-```{r}
+
+{% highlight r %}
 plot(rnorm(100),rnorm(100))
-```
+{% endhighlight %}
+
+![center]({{ site.url }}/figs/2015-01-14-01-Introduction/unnamed-chunk-1-1.png) 
 
 ##Why would you want to use it
 
@@ -36,43 +39,122 @@ One of the reasons for R's popularity is CRAN, [The Comprehensive R Archive Netw
 ###Installing packages
 When a packages gets installed, that means the source (or packaged binary for Windows) is downloaded and put into your library.  A default library location is set for you so no need to worry about that.  In fact on Windows most of this is pretty automatic.  Let's give it a shot.
 
-```{r remove_examples, echo=FALSE}
-remove.packages(c("ggplot2","dplyr"))
-```
+
+{% highlight text %}
+## Removing packages from '/data/jhollist/R/x86_64-redhat-linux-gnu-library/3.1'
+## (as 'lib' is unspecified)
+{% endhighlight %}
 
 
-```{r install_package}
+
+{% highlight text %}
+## Warning in remove.packages :
+##   there is no package called 'dplyr'
+{% endhighlight %}
+
+
+
+{% highlight r %}
 #Install dplyr and ggplot2
 install.packages("ggplot2")
-install.packages("dplyr")
+{% endhighlight %}
 
+
+
+{% highlight text %}
+## Error in install.packages : Updating loaded packages
+{% endhighlight %}
+
+
+
+{% highlight r %}
+install.packages("dplyr")
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Installing package into '/data/jhollist/R/x86_64-redhat-linux-gnu-library/3.1'
+## (as 'lib' is unspecified)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Warning in install.packages :
+##   installation of package 'dplyr' had non-zero exit status
+## 
+## The downloaded source packages are in
+## 	'/tmp/RtmpZPygEv/downloaded_packages'
+{% endhighlight %}
+
+
+
+{% highlight r %}
 #You can also put more than one in like
 install.packages(c("randomForest","formatr"))
-```
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Installing packages into '/data/jhollist/R/x86_64-redhat-linux-gnu-library/3.1'
+## (as 'lib' is unspecified)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Warning in install.packages :
+##   package 'formatr' is not available (for R version 3.1.1)
+## Warning in install.packages :
+##   Perhaps you meant 'formatR' ?
+## 
+## The downloaded source packages are in
+## 	'/tmp/RtmpZPygEv/downloaded_packages'
+{% endhighlight %}
 
 ###Loading packages
 One source of confusion that many have is when they cannot access a package that they just installed. This is because getting to this point requires an extra step, loading (or attaching) the package.   
 
-```{r load_package}
+
+{% highlight r %}
 #Add libraries to your R Session
 library("ggplot2")
 library("dplyr")
+{% endhighlight %}
 
+
+
+{% highlight text %}
+## Error in library("dplyr"): there is no package called 'dplyr'
+{% endhighlight %}
+
+
+
+{% highlight r %}
 #You can also access functions in a library by using package::function
 randomForest::randomForest
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
+## function (x, ...) 
+## UseMethod("randomForest")
+## <environment: namespace:randomForest>
+{% endhighlight %}
 
 You will often see people use `require` to load a package. It is better form to not do this. For a more detailed explanation of why `library()` and not `require()` see [Yihui Xie's post on the subject](http://yihui.name/en/2014/07/library-vs-require/.)
 
 ###Some other useful commands
 There are a lot of other commands that help you navigate packages
 
-```{r other_packages}
+
+{% highlight r %}
 #See what is installed installed.packages()
 
 #What is available.packages()
-
-```
+{% endhighlight %}
 
 ##Help!
