@@ -35,12 +35,8 @@ When a packages gets installed, that means the source (or packaged binary for Wi
 
 
 ```
-## Removing packages from 'C:/Program Files/R/R-3.1.2/library'
+## Removing packages from 'c:/Program Files/R/R-3.1.2/library'
 ## (as 'lib' is unspecified)
-```
-
-```
-## Error in find.package(pkgs, lib): there are no packages called 'ggplot2', 'dplyr'
 ```
 
 
@@ -51,10 +47,7 @@ install.packages("ggplot2")
 ```
 
 ```
-## package 'ggplot2' successfully unpacked and MD5 sums checked
-## 
-## The downloaded binary packages are in
-## 	C:\Users\JHollist\AppData\Local\Temp\1\Rtmp2Z5Gpj\downloaded_packages
+## Error in contrib.url(repos, "source"): trying to use CRAN without setting a mirror
 ```
 
 ```r
@@ -62,10 +55,7 @@ install.packages("dplyr")
 ```
 
 ```
-## package 'dplyr' successfully unpacked and MD5 sums checked
-## 
-## The downloaded binary packages are in
-## 	C:\Users\JHollist\AppData\Local\Temp\1\Rtmp2Z5Gpj\downloaded_packages
+## Error in contrib.url(repos, "source"): trying to use CRAN without setting a mirror
 ```
 
 ```r
@@ -74,18 +64,7 @@ install.packages(c("randomForest","formatr"))
 ```
 
 ```
-## Warning: package 'formatr' is not available (for R version 3.1.2)
-```
-
-```
-## Warning: Perhaps you meant 'formatR' ?
-```
-
-```
-## package 'randomForest' successfully unpacked and MD5 sums checked
-## 
-## The downloaded binary packages are in
-## 	C:\Users\JHollist\AppData\Local\Temp\1\Rtmp2Z5Gpj\downloaded_packages
+## Error in contrib.url(repos, "source"): trying to use CRAN without setting a mirror
 ```
 
 ###Loading packages
@@ -98,7 +77,7 @@ library("ggplot2")
 ```
 
 ```
-## Loading required package: methods
+## Error in library("ggplot2"): there is no package called 'ggplot2'
 ```
 
 ```r
@@ -106,16 +85,7 @@ library("dplyr")
 ```
 
 ```
-## 
-## Attaching package: 'dplyr'
-## 
-## The following object is masked from 'package:stats':
-## 
-##     filter
-## 
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
+## Error in library("dplyr"): there is no package called 'dplyr'
 ```
 
 ```r
