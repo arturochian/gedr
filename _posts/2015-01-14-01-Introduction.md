@@ -18,12 +18,6 @@ Our goals for this lesson are:
 
 ##What is R
 
-```r
-plot(rnorm(100),rnorm(100))
-```
-
-![plot of chunk unnamed-chunk-1]({{ site.url }}/figure/unnamed-chunk-1-1.png) 
-
 ##Why would you want to use it
 
 ##Getting R and RStudio going
@@ -41,12 +35,12 @@ When a packages gets installed, that means the source (or packaged binary for Wi
 
 
 ```
-## Removing packages from '/data/jhollist/R/x86_64-redhat-linux-gnu-library/3.1'
+## Removing packages from 'C:/Program Files/R/R-3.1.2/library'
 ## (as 'lib' is unspecified)
 ```
 
 ```
-## Warning in find.package(pkgs, lib): there is no package called 'dplyr'
+## Error in find.package(pkgs, lib): there are no packages called 'ggplot2', 'dplyr'
 ```
 
 
@@ -57,14 +51,10 @@ install.packages("ggplot2")
 ```
 
 ```
-## Installing package into '/data/jhollist/R/x86_64-redhat-linux-gnu-library/3.1'
-## (as 'lib' is unspecified)
-```
-
-```
+## package 'ggplot2' successfully unpacked and MD5 sums checked
 ## 
-## The downloaded source packages are in
-## 	'/tmp/RtmpDxWauF/downloaded_packages'
+## The downloaded binary packages are in
+## 	C:\Users\JHollist\AppData\Local\Temp\1\Rtmp2Z5Gpj\downloaded_packages
 ```
 
 ```r
@@ -72,19 +62,10 @@ install.packages("dplyr")
 ```
 
 ```
-## Installing package into '/data/jhollist/R/x86_64-redhat-linux-gnu-library/3.1'
-## (as 'lib' is unspecified)
-```
-
-```
-## Warning in install.packages("dplyr"): installation of package 'dplyr' had
-## non-zero exit status
-```
-
-```
+## package 'dplyr' successfully unpacked and MD5 sums checked
 ## 
-## The downloaded source packages are in
-## 	'/tmp/RtmpDxWauF/downloaded_packages'
+## The downloaded binary packages are in
+## 	C:\Users\JHollist\AppData\Local\Temp\1\Rtmp2Z5Gpj\downloaded_packages
 ```
 
 ```r
@@ -93,12 +74,7 @@ install.packages(c("randomForest","formatr"))
 ```
 
 ```
-## Installing packages into '/data/jhollist/R/x86_64-redhat-linux-gnu-library/3.1'
-## (as 'lib' is unspecified)
-```
-
-```
-## Warning: package 'formatr' is not available (for R version 3.1.1)
+## Warning: package 'formatr' is not available (for R version 3.1.2)
 ```
 
 ```
@@ -106,9 +82,10 @@ install.packages(c("randomForest","formatr"))
 ```
 
 ```
+## package 'randomForest' successfully unpacked and MD5 sums checked
 ## 
-## The downloaded source packages are in
-## 	'/tmp/RtmpDxWauF/downloaded_packages'
+## The downloaded binary packages are in
+## 	C:\Users\JHollist\AppData\Local\Temp\1\Rtmp2Z5Gpj\downloaded_packages
 ```
 
 ###Loading packages
@@ -129,7 +106,16 @@ library("dplyr")
 ```
 
 ```
-## Error in library("dplyr"): there is no package called 'dplyr'
+## 
+## Attaching package: 'dplyr'
+## 
+## The following object is masked from 'package:stats':
+## 
+##     filter
+## 
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
 ```
 
 ```r
