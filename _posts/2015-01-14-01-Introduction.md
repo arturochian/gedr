@@ -64,7 +64,7 @@ install.packages("ggplot2")
 ```
 ## 
 ## The downloaded source packages are in
-## 	'/tmp/RtmpkjfzeE/downloaded_packages'
+## 	'/tmp/RtmpDxWauF/downloaded_packages'
 ```
 
 ```r
@@ -84,7 +84,7 @@ install.packages("dplyr")
 ```
 ## 
 ## The downloaded source packages are in
-## 	'/tmp/RtmpkjfzeE/downloaded_packages'
+## 	'/tmp/RtmpDxWauF/downloaded_packages'
 ```
 
 ```r
@@ -108,7 +108,7 @@ install.packages(c("randomForest","formatr"))
 ```
 ## 
 ## The downloaded source packages are in
-## 	'/tmp/RtmpkjfzeE/downloaded_packages'
+## 	'/tmp/RtmpDxWauF/downloaded_packages'
 ```
 
 ###Loading packages
