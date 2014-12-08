@@ -10,6 +10,24 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,main,section{di
   color: #435F74;
 }
 
+.post h3 {
+  font-family:'Raleway';
+  font-weight:normal;
+  padding:1.1em 0 0.2em;
+  letter-spacing:0.05em;
+  font-size: 1.20em;
+  font-weight: 600;
+}
+
+.post h4 {
+	font-family:'Raleway';
+	font-style: italic;
+  font-weight:normal;
+  padding:1.0em 0 0.1em;
+  letter-spacing:0.04em;
+  font-size: 1em;
+}
+
 .entries h2 {
   font-family:'Raleway';
   font-weight:normal;
