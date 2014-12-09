@@ -20,11 +20,15 @@ Our goals for this lesson are:
 - Be able to install and load a package into your R library
 - Know how to get help
 
-##What is R
+##What is R and why use it
+R is an open source language and environment for data analysis, statistics, and visualization.  This is the typical definition.  I would argue that R has evolved a bit and is now, more and more, also a general purpose computing language.  It is very widely used in academia and industry for statistics, visualization, data science, and general purpose computation.  In short, the answer to the question to, "Can you do that in R" is almost always yes.  R may not be the best answer, but it is an accurate one.  
 
-##Why would you want to use it
+The primary reason R is widely used is that it is free, has a large and vibrant community, it is easily extensible, and back to that question, yes you can do that in R!  More to the point, in the environmental sciences R is able to handle any data management, analysis or visualization task that you would need to accomplish and it has capabilities to provide a fully reproducible analysis. 
 
 ##Getting R and RStudio going
+Over the last several years, RStudio has become a very popular IDE (integrated development environment) for R.  In addition to interacting with the R Console, RStudio has many extras built in including version control integration, package building, reproducible research, de-bugging, and built-in text editor with smart highlighting and code completion.  This is the environment we will be using for the two days and should set you up for continued learning with R.
+
+To start both R and RStudio requires only firing up RStudio.  RStudio should be available from All Programs at the Start Menu.  Fire up RStudio. 
 
 ##Using functions
 
