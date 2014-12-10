@@ -41,12 +41,17 @@ If read this article you certainly get the sense that R is one of the top langua
 Over the last several years, RStudio has become a very popular IDE (integrated development environment) for R.  In addition to interacting with the R Console, RStudio has many extras built in including version control integration, package building, reproducible research, de-bugging, and built-in text editor with smart highlighting and code completion.  This is the environment we will be using for the two days and should set you up for continued learning with R.
 
 ##Exercise 1
+This excercise will make sure R and RStudio are working and that you can get around the basics in RStudio.  Use the green stickies when you have completed, and red stickies if you are running into problems.
 
 1. Start RStudio: To start both R and RStudio requires only firing up RStudio.  RStudio should be available from All Programs at the Start Menu.  Fire up RStudio. You should have done this already (see [post 00](http://jwhollister.com/gedr/2015/01/14/00-Before-The-Workshop/)).
 
 2. Take a few minutes to look around RStudio.  While you do this, I will demo a few things.
 
-3. Make sure you can find the Console Pane, create a new project for Lesson 1, create a new file in the Source Pane, save that file into your newly created project. 
+3. Make sure you can find the Console Pane, create a new project for Lesson 1.
+
+4. Create a new "R Script"" in the Source Pane, save that file into your newly created project and name it "lesson1.R". 
+
+5. Download [Lesson 1 R Code](http://jwhollister.com/gedr/rmd_posts/2015-01-14-01-Introduction.R) and save it to your project.
 
 ##Using functions
 R is built off of functions and most of everything you do will use a function.
@@ -279,12 +284,12 @@ apropos("print") #Returns all available functions with "print" in the name
 {% endhighlight %}
 
 ###Official R Resources
-In addition to help from with R itself, CRAN and the R-Project have many resources available for support.  Two of the most notable are the mailing lists and the task views.
+In addition to help from with R itself, CRAN and the R-Project have many resources available for support.  Two of the most notable are the mailing lists and the [task views](http://cran.r-project.org/web/views/).
 
-- [R Help Mailing List](): The main mailing list for R help.  Can be a bit daunting and some senior folks can be, um, curmudgeonly...
-- [R-sig-ecology](): A special interest group for use of R in ecology.  Less daunting the the main help with participation form some big names in ecological modelling (Ben Bolker and Gavin Simpson).  One of the moderators is great, the other is a bit of a jerk (it's me).
-- [Environmetrics Task View](): Task views are great in that the provided an annotated list of packages relevant to a particular field.  This one is maitained by Gavin Simpson and has great info on packages relevant to much of the work at EPA.
-- [Spatial Analysis Task View](): One I use a lot that lists all the relevant packages for spatial analysis, GIS, and Remote Sensing in R. 
+- [R Help Mailing List](https://stat.ethz.ch/mailman/listinfo/r-help): The main mailing list for R help.  Can be a bit daunting and some senior folks can be, um, curmudgeonly...
+- [R-sig-ecology](https://stat.ethz.ch/mailman/listinfo/r-sig-ecology): A special interest group for use of R in ecology.  Less daunting the the main help with participation form some big names in ecological modelling (Ben Bolker and Gavin Simpson).  One of the moderators is great, the other is a bit of a jerk (it's me).
+- [Environmetrics Task View](http://cran.r-project.org/web/views/Environmetrics.html): Task views are great in that the provided an annotated list of packages relevant to a particular field.  This one is maitained by Gavin Simpson and has great info on packages relevant to much of the work at EPA.
+- [Spatial Analysis Task View](http://cran.r-project.org/web/views/Spatial.html): One I use a lot that lists all the relevant packages for spatial analysis, GIS, and Remote Sensing in R. 
 
 ###Google and StackOverflow
 While the resources already mentioned are useful, often the quickest way is to just turn to Google.  However, a search for "R" is a bit challenging.  A few ways around this.  Google works great if you search of a given package.  You can search for mailing lists directly (i.e. "R-sig-geo").  An R specific search tool, [RSeek.org](http://www.rseek.org/), has been created to facilitate this.  
@@ -300,7 +305,17 @@ As I mention earlier, there are TOO many resources to mention and everyone has t
 - [Other Resources](http://scicomp2014.edc.uri.edu/resources.html): A list I helped compile for a URI Class.
 
 
-##Excercise 2
+##Exercise 2
+For this second excercise we are going to get used to using some basic functions, working with scripts and not just the console, and look through some task views and get used to basic navigation around packages.  Use the green stickies when you have completed, and red stickies if you are running into problems.
+
+1. If it is not already open, open the "lesson1.R" file you created in Exercise 1. Enter your commands into this function, save it, and run it.
+2. Use the `print` function to print something to the screen.
+3. Combine `mean` and `rnorm` to return the mean value of a set of random numbers.
+4. Open up a [task view](http://cran.r-project.org/web/views/) of your choosing.  Select a package and install it. 
+5. Load the library.
+6. Open the help for the package.
+7. Remember all of these functions should be saved inside your "lesson1.R" script.
+
 
 
 
