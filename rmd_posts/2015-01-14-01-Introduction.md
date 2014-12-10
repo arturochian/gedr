@@ -32,11 +32,7 @@ The primary reason R is widely used is that it is free, has a large and vibrant 
 ##Getting R and RStudio going
 Over the last several years, RStudio has become a very popular IDE (integrated development environment) for R.  In addition to interacting with the R Console, RStudio has many extras built in including version control integration, package building, reproducible research, de-bugging, and built-in text editor with smart highlighting and code completion.  This is the environment we will be using for the two days and should set you up for continued learning with R.
 
-<div id="excercise-1" markdown=1>
-
 ##Exercise 1
-
-</div>
 
 1. Start RStudio: To start both R and RStudio requires only firing up RStudio.  RStudio should be available from All Programs at the Start Menu.  Fire up RStudio. You should have done this already (see [post 00](http://jwhollister.com/gedr/2015/01/14/00-Before-The-Workshop/)).
 
@@ -45,143 +41,15 @@ Over the last several years, RStudio has become a very popular IDE (integrated d
 3. Make sure you can find the Console Pane, create a new project for Lesson 1, create a new file in the Source Pane, save that file into your newly created project. 
 
 ##Using functions
-R is built off of functions.  Using functions follow the basic syntax of: `function_name(param1, param2, ...)`.
+R is built off of functions and most of everything you do will use a function.
 
-##Using packages
-The base install of R is quite powerful, but you will soon have a need or desire to go beyond this.  Packages provide this ability.  They are a standardized method for extending R with new methods, techniques, and programming functionality.  There is a lot to say about packages regarding finding them, using them, etc., but for now let's focus just on the basics.  
-
-###CRAN
-One of the reasons for R's popularity is CRAN, [The Comprehensive R Archive Network](http://cran.r-project.org/).  This is where you download R and also where most will gain access to packages (there are other places, but that is for later).  Not much else to say about this now other than to be aware or it.
-
-###Installing packages
-When a packages gets installed, that means the source (or packaged binary for Windows) is downloaded and put into your library.  A default library location is set for you so no need to worry about that.  In fact on Windows most of this is pretty automatic.  Let's give it a shot.
+The basic syntax of function follows the form: `function_name(param1, param2, ...)`.  With the base install, you will gain access to many.  For instance:
 
 
 
-{% highlight r %}
-#Install dplyr and ggplot2
-install.packages("ggplot2")
-{% endhighlight %}
 
 
 
-{% highlight text %}
-## Installing package into '/data/jhollist/R/x86_64-redhat-linux-gnu-library/3.1'
-## (as 'lib' is unspecified)
-{% endhighlight %}
 
 
 
-{% highlight text %}
-## 
-## The downloaded source packages are in
-## 	'/tmp/RtmpFFMvXl/downloaded_packages'
-{% endhighlight %}
-
-
-
-{% highlight r %}
-install.packages("dplyr")
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Installing package into '/data/jhollist/R/x86_64-redhat-linux-gnu-library/3.1'
-## (as 'lib' is unspecified)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## 
-## The downloaded source packages are in
-## 	'/tmp/RtmpFFMvXl/downloaded_packages'
-{% endhighlight %}
-
-
-
-{% highlight r %}
-#You can also put more than one in like
-install.packages(c("randomForest","formatR"))
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Installing packages into '/data/jhollist/R/x86_64-redhat-linux-gnu-library/3.1'
-## (as 'lib' is unspecified)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## 
-## The downloaded source packages are in
-## 	'/tmp/RtmpFFMvXl/downloaded_packages'
-{% endhighlight %}
-
-###Loading packages
-One source of confusion that many have is when they cannot access a package that they just installed. This is because getting to this point requires an extra step, loading (or attaching) the package.   
-
-
-{% highlight r %}
-#Add libraries to your R Session
-library("ggplot2")
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: methods
-{% endhighlight %}
-
-
-
-{% highlight r %}
-library("dplyr")
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## 
-## Attaching package: 'dplyr'
-## 
-## The following object is masked from 'package:stats':
-## 
-##     filter
-## 
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-{% endhighlight %}
-
-
-
-{% highlight r %}
-#You can also access functions in a library by using package::function
-randomForest::randomForest
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## function (x, ...) 
-## UseMethod("randomForest")
-## <environment: namespace:randomForest>
-{% endhighlight %}
-
-You will often see people use `require` to load a package. It is better form to not do this. For a more detailed explanation of why `library()` and not `require()` see [Yihui Xie's post on the subject](http://yihui.name/en/2014/07/library-vs-require/.)
-
-###Some other useful commands
-There are a lot of other commands that help you navigate packages
-
-
-{% highlight r %}
-#See what is installed installed.packages()
-
-#What is available.packages()
-{% endhighlight %}
-
-##Help!
