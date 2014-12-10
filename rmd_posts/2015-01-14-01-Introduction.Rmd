@@ -43,7 +43,9 @@ Over the last several years, RStudio has become a very popular IDE (integrated d
 3. Make sure you can find the Console Pane, create a new project for Lesson 1, create a new file in the Source Pane, save that file into your newly created project. 
 
 ##Using functions
-R is built off of functions.  Using functions follow the basic syntax of: `function_name(param1, param2, ...)`.
+R is built off of functions and most of everything you do will use a function.
+
+The basic syntax of function follows the form: `function_name(param1, param2, ...)`.
 
 ##Using packages
 The base install of R is quite powerful, but you will soon have a need or desire to go beyond this.  Packages provide this ability.  They are a standardized method for extending R with new methods, techniques, and programming functionality.  There is a lot to say about packages regarding finding them, using them, etc., but for now let's focus just on the basics.  
