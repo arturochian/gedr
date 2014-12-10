@@ -21,8 +21,8 @@ Our goals for this lesson are:
 - Be able to install and load a package into your R library
 - Know how to get help
 
-##Quick Links to Excercises and R code
-My goal is to have this workshop be as hands-on as possible.  As such, there are excercises through out.  For each lesson, I will provide a list of links near the top of the post so that you can skip all the prose and jump straight to the lessons.  So, here are the links for Lesson 1.
+##Quick Links to Exercises and R code
+My goal is to have this workshop be as hands-on as possible.  As such, there are exercises through out.  For each lesson, I will provide a list of links near the top of the post so that you can skip all the prose and jump straight to the lessons.  So, here are the links for Lesson 1.
 
 - [Lesson 1 R Code](http://jwhollister.com/gedr/rmd_posts/2015-01-14-01-Introduction.R): All the code from this post in an R Script.
 - [Exercise 1](#exercise-1): RStudio Introduction.
@@ -43,7 +43,7 @@ If read this article you certainly get the sense that R is one of the top langua
 Over the last several years, RStudio has become a very popular IDE (integrated development environment) for R.  In addition to interacting with the R Console, RStudio has many extras built in including version control integration, package building, reproducible research, de-bugging, and built-in text editor with smart highlighting and code completion.  This is the environment we will be using for the two days and should set you up for continued learning with R.
 
 ##Exercise 1
-This excercise will make sure R and RStudio are working and that you can get around the basics in RStudio.  Use the green stickies when you have completed, and red stickies if you are running into problems.
+This exercise will make sure R and RStudio are working and that you can get around the basics in RStudio.  Use the green stickies when you have completed, and red stickies if you are running into problems.
 
 1. Start RStudio: To start both R and RStudio requires only firing up RStudio.  RStudio should be available from All Programs at the Start Menu.  Fire up RStudio. You should have done this already (see [post 00](http://jwhollister.com/gedr/2015/01/14/00-Before-The-Workshop/)).
 
@@ -142,7 +142,7 @@ In addition to help from with R itself, CRAN and the R-Project have many resourc
 
 - [R Help Mailing List](https://stat.ethz.ch/mailman/listinfo/r-help): The main mailing list for R help.  Can be a bit daunting and some senior folks can be, um, curmudgeonly...
 - [R-sig-ecology](https://stat.ethz.ch/mailman/listinfo/r-sig-ecology): A special interest group for use of R in ecology.  Less daunting the the main help with participation form some big names in ecological modelling (Ben Bolker and Gavin Simpson).  One of the moderators is great, the other is a bit of a jerk (it's me).
-- [Environmetrics Task View](http://cran.r-project.org/web/views/Environmetrics.html): Task views are great in that the provided an annotated list of packages relevant to a particular field.  This one is maitained by Gavin Simpson and has great info on packages relevant to much of the work at EPA.
+- [Environmetrics Task View](http://cran.r-project.org/web/views/Environmetrics.html): Task views are great in that the provided an annotated list of packages relevant to a particular field.  This one is maintained by Gavin Simpson and has great info on packages relevant to much of the work at EPA.
 - [Spatial Analysis Task View](http://cran.r-project.org/web/views/Spatial.html): One I use a lot that lists all the relevant packages for spatial analysis, GIS, and Remote Sensing in R. 
 
 ###Google and StackOverflow
@@ -160,7 +160,7 @@ As I mention earlier, there are TOO many resources to mention and everyone has t
 
 
 ##Exercise 2
-For this second excercise we are going to get used to using some basic functions, working with scripts and not just the console, and look through some task views and get used to basic navigation around packages.  Use the green stickies when you have completed, and red stickies if you are running into problems.
+For this second exercise we are going to get used to using some basic functions, working with scripts and not just the console, and look through some task views and get used to basic navigation around packages.  Use the green stickies when you have completed, and red stickies if you are running into problems.
 
 1. If it is not already open, open the "lesson1.R" file you created in Exercise 1. Enter your commands into this function, save it, and run it.
 2. Use the `print` function to print something to the screen.
