@@ -24,7 +24,8 @@ Our goals for this lesson are:
 ##Quick Links to Excercises
 My goal is to have this workshop be as hands-on as possible.  As such, there are excercises through out.  For each lesson, I will provide a list of links near the top of the post so that you can skip all the prose and jump straight to the lessons.  So, here are the links for Lesson 1.
 
-- [Excercise 1](#exercise-1): RStudio Introduction.
+- [Exercise 1](#exercise-1): RStudio Introduction.
+- [Exercise 2](#exercise-2): Functions, packages, and help
 
 ##What is R and why use it
 R is an open source language and environment for data analysis, statistics, and visualization.  This is the typical definition.  I would argue that R has evolved a bit and is now, more and more, also a general purpose computing language.  It is very widely used in academia and industry for statistics, visualization, data science, and general purpose computation.  In short, the answer to the question to, "Can you do that in R" is almost always yes.  R may not be the best answer, but it is an accurate one.  
