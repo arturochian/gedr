@@ -3,7 +3,7 @@
 options(repos="http://cran.rstudio.com/")
 
 
-## ----function_examples, cache=T------------------------------------------
+## ----function_examples, cache=TRUE---------------------------------------
 #Print
 print("hello world!")
 #A sequence
@@ -33,7 +33,7 @@ randomForest::randomForest
 
 
 
-## ----other_packages, cache=TRUE, eval=FALSE------------------------------
+## ----other_packages, eval=FALSE------------------------------------------
 ## #See what is installed
 ## installed.packages()
 ## 
@@ -44,7 +44,7 @@ randomForest::randomForest
 ## update.packages()
 
 
-## ----help_from_console, eval=FALSE, cache=TRUE---------------------------
+## ----help_from_console, eval=FALSE---------------------------------------
 ## #Using the help command/shortcut
 ## help("print") #Help on the print command
 ## ?print #Help on the print command using the `?` shortcut

@@ -55,7 +55,7 @@ R is built off of functions and most of everything you do will use a function.
 
 The basic syntax of function follows the form: `function_name(param1, param2, ...)`.  With the base install, you will gain access to many.  For instance:
 
-```{r function_examples, cache=T}
+```{r function_examples, cache=TRUE}
 #Print
 print("hello world!")
 #A sequence
@@ -103,7 +103,7 @@ You will often see people use `require` to load a package. It is better form to 
 ###Some other useful commands
 There are a lot of other commands that help you navigate packages
 
-```{r other_packages, cache=TRUE, eval=FALSE}
+```{r other_packages, eval=FALSE}
 #See what is installed
 installed.packages()
 
@@ -120,7 +120,7 @@ Being able to find help and interpret that help is probably one of the most impo
 ###Help from the console
 Getting help from the console is straightforward and can be done numerous ways.
 
-```{r help_from_console, eval=FALSE, cache=TRUE}
+```{r help_from_console, eval=FALSE}
 #Using the help command/shortcut
 help("print") #Help on the print command
 ?print #Help on the print command using the `?` shortcut

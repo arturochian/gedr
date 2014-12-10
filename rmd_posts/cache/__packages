@@ -1,4 +1,5 @@
 base
 dplyr
 ggplot2
+knitr
 scimapClient

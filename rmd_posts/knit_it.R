@@ -3,4 +3,5 @@ knit_it<-function(rmdfile){
 	knitr::opts_chunk$set(fig.path="")
 	knitr::render_jekyll()
 	knitr::knit(rmdfile,tangle=TRUE)
+	knitr::knit(rmdfile)
 }
