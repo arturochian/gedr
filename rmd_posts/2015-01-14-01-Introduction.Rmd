@@ -45,7 +45,7 @@ Over the last several years, RStudio has become a very popular IDE (integrated d
 ##Using functions
 R is built off of functions and most of everything you do will use a function.
 
-The basic syntax of function follows the form: `function_name(param1, param2, ...)`.
+The basic syntax of function follows the form: `function_name(param1, param2, ...)`.  With the base install, you will gain access to many basic function
 
 ##Using packages
 The base install of R is quite powerful, but you will soon have a need or desire to go beyond this.  Packages provide this ability.  They are a standardized method for extending R with new methods, techniques, and programming functionality.  There is a lot to say about packages regarding finding them, using them, etc., but for now let's focus just on the basics.  
