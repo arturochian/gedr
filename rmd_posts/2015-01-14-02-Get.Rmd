@@ -4,6 +4,18 @@ author: Jeffrey W. Hollister
 layout: post_page
 ---
 
+```{r setup, echo=FALSE, warning=FALSE}
+options(repos="http://cran.rstudio.com/")
+```
+
+The second lesson is going to start to lay the foundation for working with data in R.  We will cover some of the very basics of R first, the move on to how you get data into R and how you work with some of the basic data structures.  Lastly, we will cover some ways to find relevant data and pull it directly into R.
+
+##Quick Links to Exercises and R code
+
+##Lesson Goals
+
+##More basics of R
+
 ##Data types and structures in R
 
 ##Reading data into R
