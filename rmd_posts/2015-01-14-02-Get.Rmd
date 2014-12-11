@@ -8,13 +8,27 @@ layout: post_page
 options(repos="http://cran.rstudio.com/")
 ```
 
-The second lesson is going to start to lay the foundation for working with data in R.  We will cover some of the very basics of R first, the move on to how you get data into R and how you work with some of the basic data structures.  Lastly, we will cover some ways to find relevant data and pull it directly into R.
+The second lesson is going to start to lay the foundation for working with data in R.  We will cover some of the very basics of R first, then move on to how you get data into R and how you work with some of the basic data structures.  Lastly, we will cover some ways to find relevant data and pull it directly into R.
 
 ##Quick Links to Exercises and R code
+- [Lesson 2 R Code](http://jwhollister.com/gedr/rmd_posts/2015-01-14-02-Get.R): All the code from this post in an R Script.
 
 ##Lesson Goals
+- Understand workflow basics
+- Learn R concepts such as assignment and operators
+- Learn some useful R functions
+- Understand the basic data structures and data types
+- Be able to read data into R from a variety of sources
+- Interact with data being served from web APIs
 
-##More basics of R
+##More basics
+Before we jump into details on data in R we need to introduce a few of the basics about working in the console, working via scripts, and workspaces/projects.  We will also start working with some simple, yet important R functions.
+
+###Workflow
+
+###Working in the Console
+
+
 
 ##Data types and structures in R
 
