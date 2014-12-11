@@ -47,7 +47,9 @@ This exercise will make sure R and RStudio are working and that you can get arou
 
 1. Start RStudio: To start both R and RStudio requires only firing up RStudio.  RStudio should be available from All Programs at the Start Menu.  Fire up RStudio. You should have done this already (see [post 00](http://jwhollister.com/gedr/2015/01/14/00-Before-The-Workshop/)).
 
-2. Take a few minutes to look around RStudio.  Find the Console Pane. Find Global and Project Options (hint: look in Tools).  Look at the Environment, History Pane.  Look at the Files,   create a new project for Lesson 1.
+2. Take a few minutes to look around RStudio.  Find the Console Pane. Find Global and Project Options (hint: look in Tools).  Look at the Environment, History Pane.  Look at the Files, Plots, Packages ... pane.
+
+3. Create a new project.  Name is "gedr_workshop".  We will use this for the rest of the workshop.
 
 4. Create a new "R Script"" in the Source Pane, save that file into your newly created project and name it "lesson1.R". 
 
