@@ -29,12 +29,50 @@ Being thoughtful about workflow from the beginning of a project is something tha
 
 1. Use a single project for this workshop (we created that in Lesson 1: Exercise 1).
 2. Start everything in a script and use copy/paste or the RStudio tools to send to the console.
-3. Don't save .RData files or workspace history.  The script should recreate whatever you need.
+3. Use a new script for each lesson.
+4. Comment ruthlessly.
+5. Don't save .RData files or workspace history.  The script should recreate whatever you need.
 
-
+This, of course, is not the only way you can strucutre a workflow, but I think it should be a good starting point for this workshop and one you can adapt to you own work.  And to provide a little motiviation, the more you utilize scripts, the more reproducible you work is, the more likely you will be able to recall what you did 3 months from now (your future self will thank you), and the easier it will be to transition your work from scripts to functions and, ultimately, to R packages.
 
 ###Working in the Console
+As I mentioned above, the conosle and using R interactively is very powerful.  We will do this quite a bit.  Let's spend a little time playing around in the console and learn a few new functions.
 
+R can be used as a caculator and a way to compare values.  Some examples of the basic operators:
+
+```{r operators_consoloe}
+#A really powerful calculator!
+1+1 #Add
+10-4 #Subtract
+3*2 #Multiply
+3^3 #Exponents
+100/10 #Divide
+5%%2 #Modulus
+5>2 #Greater than
+4<5 #Less than
+5<=5 #Less than or equal
+8>=2 #Greater than or equal
+```
+
+That's neat, but so what...  
+
+Well, it could be interesting to do something with those values and save them for re-use.  We can do that with objects (everything in R is an object) and use the assignment operator, `<-`.
+
+```{r assignment_operator}
+#Numeric assignment
+x<-5
+x
+y<-x+1
+y
+z<-x+y
+#Character
+a<-"Bob"
+a
+b<-"Sue"
+b
+```
+
+##Exercise 1
 
 
 ##Data types and structures in R
