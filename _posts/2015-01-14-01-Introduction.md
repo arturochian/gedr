@@ -12,7 +12,7 @@ Over the course of the next two days we are going to walk through a typical data
 My goal is to have this workshop be as hands-on as possible.  As such, there are exercises through out.  For each lesson, I will provide a list of links near the top of the post so that you can skip all the prose and jump straight to the lessons.  So, here are the links for Lesson 1.
 
 - [Lesson 1 R Code](http://jwhollister.com/gedr/rmd_posts/2015-01-14-01-Introduction.R): All the code from this post in an R Script.
-- Exercise 1](#exercise-1): RStudio Introduction.
+- [Exercise 1](#exercise-1): RStudio Introduction.
 - [Exercise 2](#exercise-2): Functions, packages, and help
 
 ##Lesson Goals
@@ -45,9 +45,9 @@ This exercise will make sure R and RStudio are working and that you can get arou
 
 1. Start RStudio: To start both R and RStudio requires only firing up RStudio.  RStudio should be available from All Programs at the Start Menu.  Fire up RStudio. You should have done this already (see [post 00](http://jwhollister.com/gedr/2015/01/14/00-Before-The-Workshop/)).
 
-2. Take a few minutes to look around RStudio.  While you do this, I will demo a few things.
+2. Take a few minutes to look around RStudio.  Find the Console Pane. Find Global and Project Options (hint: look in Tools).  Look at the Environment, History Pane.  Look at the Files, Plots, Packages ... pane.
 
-3. Make sure you can find the Console Pane, create a new project for Lesson 1.
+3. Create a new project.  Name is "gedr_workshop".  We will use this for the rest of the workshop.
 
 4. Create a new "R Script"" in the Source Pane, save that file into your newly created project and name it "lesson1.R". 
 
@@ -122,6 +122,8 @@ mean(rnorm(100))
 {% highlight text %}
 ## [1] 0.05279571
 {% endhighlight %}
+
+As an aside, the `#` indicates a comment.  You can put whatever else you'd like on the line after this.  R will not evaluate it.  When commenting your code, err on the side of too much!
 
 ##Using packages
 The base install of R is quite powerful, but you will soon have a need or desire to go beyond this.  Packages provide this ability.  They are a standardized method for extending R with new methods, techniques, and programming functionality.  There is a lot to say about packages regarding finding them, using them, etc., but for now let's focus just on the basics.  
@@ -308,7 +310,7 @@ As I mention earlier, there are TOO many resources to mention and everyone has t
 ##Exercise 2
 For this second exercise we are going to get used to using some basic functions, working with scripts and not just the console, and look through some task views and get used to basic navigation around packages.  Use the green stickies when you have completed, and red stickies if you are running into problems.
 
-1. If it is not already open, open the "lesson1.R" file you created in Exercise 1. Enter your commands into this function, save it, and run it.
+1. If it is not already open, open the "lesson1.R" file you created in Exercise 1. Enter your commands into this script, save it, and run it.
 2. Use the `print` function to print something to the screen.
 3. Combine `mean` and `rnorm` to return the mean value of a set of random numbers.
 4. Open up a [task view](http://cran.r-project.org/web/views/) of your choosing.  Select a package and install it. 
