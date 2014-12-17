@@ -11,7 +11,7 @@ options(repos="http://cran.rstudio.com/")
 The second lesson is going to start to lay the foundation for working with data in R.  We will cover some of the very basics of R first, then move on to how you get data into R and how you work with some of the basic data structures.  Lastly, we will cover some ways to find relevant data and pull it directly into R.
 
 ##Quick Links to Exercises and R code
-- [Lesson 2 R Code](http://jwhollister.com/gedr/rmd_posts/2015-01-14-02-Get.R): All the code from this post in an R Script.
+- [Lesson 2 R Code](/gedr/rmd_posts/2015-01-14-02-Get.R): All the code from this post in an R Script.
 - [Exercise 1](#exercise-1): Introduction to the console and basic functions
 
 ##Lesson Goals
@@ -139,15 +139,16 @@ In short it has a lot to do with data types.  Let's learn some more
 Remember that everything in R is an object.  With regards to data, those objects have some specific characteristics that help R (and us) know what kind of data we are dealing with and what kind of operations can be done on that data.  This stuff may be a bit dry, but a basic understanding will help as so much of what we do with analysis has to do with the organization and type of data we have. First, lets discuss the atomic data types.
 
 ###Data Types
-There are 5 basic atomic classes: character, numeric (real or decimal), integer, logical, and complex.
+There are 6 basic atomic classes: character, numeric (real or decimal), integer, logical, complex, and raw.
 
-| Example | Type |
-| ------- | ---- |
-| "a", "swc" | character |
-| 2, 15.5 | numeric | 
-| 2 (usually add a `L` at end to denote integer)      | integer |
-| `TRUE`, `FALSE` | logical |
-| 1+4i | complex | 
+| Example 				 | Type 		 |
+| :--------------- | --------: |
+| "a", "swc" 			 | character |
+| 2, 15.5 				 | numeric 	 | 
+| 2L 							 | integer 	 |
+| `TRUE`, `FALSE`  | logical 	 |
+| 1+4i 						 | complex 	 |
+| 62 6f 62         | raw			 |
 
 In this workshop we will deal almost exclusively with three (and these are, in my experience, by far the most common): character, numeric, and logical.  There are also some useful commands to explore these data types and get some basic information about them.
 
@@ -157,106 +158,10 @@ length()  # how long is it? What about two dimensional objects?
 attributes()  # does it have any metadata?
 ```
 
-###Data Structures
-The next set of information relates to the many data strucutres in R.  Our efforts will focus on vectors and data frames.  We will discuss just the basics of lists and factors.  I will leave it to your curiousity to explore the matrix and table data structures
+### NA, Inf, and NaN
+There are values that you will run across on ocassion that aren't really data types but are important to know about.  
 
-The data structres in base R include:
-
-- vector
-- list
-- matrix
-- data frame
-- factors
-- tables
-
-### Vectors
-A vector is the most common and basic data structure in `R` and is pretty much the workhorse of R. Vectors can be of two types:
-
-* atomic vectors
-* lists
-
-**Atomic Vectors**
-A vector can be a vector of characters, logical, integers or numeric.
-
-Create an empty vector with `vector()`
-
-```{r}
-x <- vector()
-x
-# with a pre-defined length
-x <- vector(length = 10)
-x
-# with a length and type
-vector("character", length = 10)
-vector("numeric", length = 10)
-vector("integer", length = 10)
-vector("logical", length = 10)
-```
-
-The general pattern is `vector(class of object, length)`.  You can also create vectors by concactenating them using the `c()` function.
-
-Various examples:
-
-```{r}
-x <- c(1, 2, 3)
-```
-
-x is a numeric vector. These are the most common kind. They are numeric objects and are treated as double precision real numbers. To explicitly create integers, add a `L` at the end.
-
-```{r}
-x1 <- c(1L, 2L, 3L)
-```
-
-You can also have logical vectors. 
-
-```{r}
-y <- c(TRUE, TRUE, FALSE, FALSE)
-```
-
-Finally you can have character vectors:
-
-```{r}
-z <- c("Alec", "Dan", "Rob", "Karthik")
-```
-
-**Examine your vector**  
-
-```{r}
-typeof(z)
-length(z)
-class(z)
-str(z)
-```
-
-Question: Do you see a property that's common to all these vectors above?
-
-**Add elements**
-
-```{r}
-z <- c(z, "Annette")
-z
-```
-
-More examples of vectors
-
-```{r}
-x <- c(0.5, 0.7)
-x <- c(TRUE, FALSE)
-x <- c(T, F)
-x <- c("a", "b", "c", "d", "e")
-x <- 9:100
-x <- c(i + 0, 2 + 4)
-```
-
-You can also create vectors as sequence of numbers
-
-```{r}
-series <- 1:10
-seq(10)
-seq(1, 10, by = 0.1)
-```
-
-**Other objects**
+`NA` is R's value for missing data.  You will see this often.
 
 `Inf` is infinity. You can have positive or negative infinity.
 
@@ -274,122 +179,145 @@ seq(1, 10, by = 0.1)
 NaN.
 ```
 
+###Data Structures
+The next set of information relates to the many data strucutres in R.  
 
-Each object has an attribute. Attribues can be part of an object of R. These include 
+The data structures in base R include:
 
-* names
-* dimnames
-* length
-* class
-* attributes (contain metadata)
+- vector
+- list
+- matrix
+- data frame
+- factors
+- tables
 
-For a vector, `length(vector_name)` is just the total number of elements.
+Our efforts will focus on vectors and data frames.  We will discuss just the basics of lists and factors.  I will leave it to your curiousity to explore the matrix and table data structures
 
-### List
+### Vectors
+A vector is the most common and basic data structure in `R` and is pretty much the workhorse of R. 
 
-In R lists act as containers. Unlike atomic vectors, its contents are not restricted to a single mode and can encompass any data type. Lists are sometimes called recursive vectors, because a list can contain other lists. This makes them fundamentally different from atomic vectors. 
+A vector can be a vector of characters, logical, integers or numeric and all values in the vector must be of the same data type.  Specifically, these are known as atomic vectors.
 
-List is a special vector. Each element can be a different class.
+There are many ways to create vectors, but we will focus on one, `c()`, which is a very common way to create a vector from a set of values.  `c()` combines a set of arguments into a single vector.  For instance,
 
-Create lists using `list` or coerce other objects using `as.list()`
-
-```{r}
-x <- list(1, "a", TRUE, 1 + 4)
+```{r use_c}
+char_vector <- c("Joe","Bob","Sue")
+num_vector <- c(1,6,99,-2)
+logical_vector <- c(TRUE,FALSE,FALSE,TRUE,T,F)
 ```
 
-```{r}
-x <- 1:10
-x <- as.list(x)
-length(x)
+Now that we have these we can use some functions to examine the vectors. 
+
+```{r examine_vector}
+#Print the vector
+print(char_vector)
+char_vector
+
+#Examine the vector
+typeof(char_vector)
+length(logical_vector)
+class(num_vector)
+str(char_vector)
 ```
 
+We can also add to existing vectors using `c()`.
 
-```{r}
-xlist <- list(a = "Karthik Ram", b = 1:10, data = head(iris))
+```{r add_to_vec}
+char_vector <- c(char_vector, "Jeff")
+char_vector
 ```
 
-what is the length of this object?
-what about its structure?
+Lastly, there are some ways to speed up entry of values.
 
-List can contain as many lists nested inside.
+```{r vector_shortcuts}
+#Create a series
+series <- 1:10
+seq(10)
+seq(1, 10, by = 0.1)
 
-```{r}
-temp <- list(list(list(list())))
-temp
-is.recursive(temp)
+#Repeat values
+fives<-rep(5,10)
+fives
+laugh<-rep("Ha", 100)
+laugh
 ```
 
-Lists are extremely useful inside functions. You can "staple" together lots of different kinds of results into a single object that a function can return.
+### Data frames
 
-It doesn't print out like a vector. Prints a new line for each element.
+Data frames are the data structure you will most often use when doing data analysis.  They are the most spreadsheet like data structure in R, but unlike spreadsheets there are some rules that must be followed. This is a good thing!
 
-### Factors
+Data frames are made up of columns and rows.  Each column is a vector and those vectors must be of the same length.  Essentially, anything that can be saved in a `.csv` file can be read in as a data frame.  Data frames have several attributes.  The ones you will interact with the most are column names, row names, dimension.  
 
-Factors are special vectors that represent categorical data. Factors can be ordered or unordered and are important when for modelling functions such as `lm()` and `glm()` and also in plot methods.
+So one way to create a data frame from some vectors and the `data.frame()` command:
 
-Factors can only contain pre-defined values.
+```{r create_data_frame}
+numbers <- 1:26
+letters <- letters #this is a special object available from base R
+logical <- c(rep(TRUE,13),rep(FALSE,13))
+examp_df <- data.frame(numbers,letters,logical)
+```
+
+Now that we have this data frame we probably want to do something with it.  We can examine it in many ways.
+
+```{r examine_data_frame}
+#See the first 6 rows
+head(examp_df)
+#See the last 6 rows
+tail(examp_df)
+#See column names
+names(examp_df)
+#see row names
+rownames(examp_df)
+#Show structure of full data frame
+str(examp_df)
+#Show number of rows and colums
+dim(examp_df)
+nrow(examp_df)
+ncol(examp_df)
+```
+
+### Factors and Lists
+
+Factors are special vectors that represent categorical data. Factors can be ordered or unordered and are often important with modelling functions such as `lm()` and `glm()` (think dummy variables) and also in plot methods.
 
 Factors are pretty much integers that have labels on them.  While factors look (and often behave) like character vectors, they are actually integers under the hood, and you need to be careful when treating them like strings. Some string methods will coerce factors to strings, while others will throw an error.
 
-Sometimes factors can be left unordered. Example: male, female
-
-Other times you might want factors to be ordered (or ranked). Example: low, medium, high. 
-
-Underlying it's represented by numbers 1,2,3.
-
-They are better than using simple integer labels because factors are what are called self describing. male and female is more descriptive than 1s and 2s. Helpful when there is no additional metadata.
-
-Which is male? 1 or 2? You wouldn't be able to tell with just integer data. Factors have this information built in.
+Factors may be ordered (e.g., low, medium, high) or unordered (e.g. male, female).
 
 Factors can be created with `factor()`. Input is a character vector.
 
-```{r}
-x <- factor(c("yes", "no", "no", "yes", "yes"))
-x
+```{r factor_examples}
+#An unorderd factor
+yn <- factor(c("yes", "no", "no", "yes", "yes"))
+yn
+
+#An ordered factor
+lmh <- factor (c("high","high","low","medium","low","medium","high"),levels=c("low","medium","high"),ordered=TRUE )
 ```
 
-`table(x)` will return a frequency table.
+### List
 
-`unclass(x)` strips out the class information.
+Lists are actually a special type of vector, but it is probably best to think of them as their own thing.  Lists can contain multiple items, of mulitple types, and of multiple structures.  They are very versatile and often used inside functions or as an output of functions.  
 
-In modeling functions, importnat to know whta baseline levels is.
-This is the first factor but by default the ordering is determined by alphabetical order of words entered. You can change this by speciying the levels.
+Also, lists don't print out like a vector. They print a new line for each element.
 
-```{r}
-x <- factor(c("yes", "no", "yes"), levels = c("yes", "no"))
+Lists are made simply with the `list()` function.
+
+```{r list_examples}
+examp_list<-list(letters=c("x","y","z"),animals=c("cat","dog","bird","fish"),numbers=1:100,df=examp_df)
+examp_list
 ```
 
-### Data frame
-
-A data frame is a very important data type in R. It's pretty much the de facto data structure for most tabular data and what we use for statistics.
-
-data frames can have additional attributes such as `rownames()`. This can be useful for annotating data, like subject_id or sample_id. But most of the time they are not used.
-
-e.g. `rownames()`
-useful for annotating data. subject names.
-other times they are not useful.
-
-* Data frames Usually created by read.csv and read.table.
-
-* Can convert to `matrix` with `data.matrix()`
-
-* Coercion will force and not always what you expect.
-
-* Can also create with `data.frame()` function.
-
-With and data frame, you can do `nrow(df)` and `ncol(df)`
-rownames are usually 1..n.
-
-**Useful functions**  
-`head()` - see first 5 rows
-`tail()` - see last 5 rows
-`dim()` - see dimensions
-`nrow()` - number of rows
-`ncol()` - number of columns
-`str()` - structure of each column
-`names()` - will list column names for a data.frame (or any object really).
-`summary()` - summarizes each column in a data frame
+If you want to learn more about lists or any other data structure, [Hadley Wickham's Advanced R section on data structures](http://adv-r.had.co.nz/Data-structures.html) is good.
 
 ##Reading data into R
+All of the examples so far have relied on entering data directly into the console or a script.  That mode is certainly useful for demonstrating data structures, but would be a nightmare if you were dealing with a real dataset.  What we generally want to do is read in data from a file or from a database that resides on your local machine or on the web.  There are a gazillion ways that this can be accomplished, right now, we are going to work with one, `read.csv()`.  If there is time later, we may talk about some others.
+
+`read.csv()` is a specialized version of `read.table()` that focuses on, big surprise here, `.csv` files.  This command assumes a header row with column names and that the delimiter is a comma.  The expected  
+no data value is `NA` and by default, strings are converted to factors (this can trip people up).
+
+Source files for `read.csv()` can either be on a local hard drive or, and this is pretty cool, on the web.  We will be using the later for our examples and exercises.  If you had a local file it would be accessed like `mydf <- read.csv("C:/path/to/local/file.csv")`.  As an aside, paths and use of forward vs back slash is important. R is looking for forward slashes ("/"), or unix-like paths.  You can use these in place of the back slash and be fine.  You can use a back slash but it needs to be a double back slash ("\\").  This is becuase the single backslash in an escape character that is used to indicate things like newlines or tabs. Doesn't really matter which one you use, I would just select one and be consistent.
+
+For now we are going to be focusing on grabbing data from a website
 
 ##Exercise 2

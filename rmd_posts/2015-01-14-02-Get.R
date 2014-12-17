@@ -70,62 +70,6 @@ list.dirs("..")
 
 
 ## ------------------------------------------------------------------------
-x <- vector()
-x
-# with a pre-defined length
-x <- vector(length = 10)
-x
-# with a length and type
-vector("character", length = 10)
-vector("numeric", length = 10)
-vector("integer", length = 10)
-vector("logical", length = 10)
-
-
-## ------------------------------------------------------------------------
-x <- c(1, 2, 3)
-
-
-## ------------------------------------------------------------------------
-x1 <- c(1L, 2L, 3L)
-
-
-## ------------------------------------------------------------------------
-y <- c(TRUE, TRUE, FALSE, FALSE)
-
-
-## ------------------------------------------------------------------------
-z <- c("Alec", "Dan", "Rob", "Karthik")
-
-
-## ------------------------------------------------------------------------
-typeof(z)
-length(z)
-class(z)
-str(z)
-
-
-## ------------------------------------------------------------------------
-z <- c(z, "Annette")
-z
-
-
-## ------------------------------------------------------------------------
-x <- c(0.5, 0.7)
-x <- c(TRUE, FALSE)
-x <- c(T, F)
-x <- c("a", "b", "c", "d", "e")
-x <- 9:100
-x <- c(i + 0, 2 + 4)
-
-
-## ------------------------------------------------------------------------
-series <- 1:10
-seq(10)
-seq(1, 10, by = 0.1)
-
-
-## ------------------------------------------------------------------------
 1/0
 # [1] Inf
 1/Inf
@@ -137,32 +81,77 @@ seq(1, 10, by = 0.1)
 NaN.
 
 
-## ------------------------------------------------------------------------
-x <- list(1, "a", TRUE, 1 + 4)
+## ----use_c---------------------------------------------------------------
+char_vector <- c("Joe","Bob","Sue")
+num_vector <- c(1,6,99,-2)
+logical_vector <- c(TRUE,FALSE,FALSE,TRUE,T,F)
 
 
-## ------------------------------------------------------------------------
-x <- 1:10
-x <- as.list(x)
-length(x)
+## ----examine_vector------------------------------------------------------
+#Print the vector
+print(char_vector)
+char_vector
+
+#Examine the vector
+typeof(char_vector)
+length(logical_vector)
+class(num_vector)
+str(char_vector)
 
 
-## ------------------------------------------------------------------------
-xlist <- list(a = "Karthik Ram", b = 1:10, data = head(iris))
+## ----add_to_vec----------------------------------------------------------
+char_vector <- c(char_vector, "Jeff")
+char_vector
 
 
-## ------------------------------------------------------------------------
-temp <- list(list(list(list())))
-temp
-is.recursive(temp)
+## ----vector_shortcuts----------------------------------------------------
+#Create a series
+series <- 1:10
+seq(10)
+seq(1, 10, by = 0.1)
+
+#Repeat values
+fives<-rep(5,10)
+fives
+laugh<-rep("Ha", 100)
+laugh
 
 
-## ------------------------------------------------------------------------
-x <- factor(c("yes", "no", "no", "yes", "yes"))
-x
+## ----create_data_frame---------------------------------------------------
+numbers <- 1:26
+letters <- letters #this is a special object available from base R
+logical <- c(rep(TRUE,13),rep(FALSE,13))
+examp_df <- data.frame(numbers,letters,logical)
 
 
-## ------------------------------------------------------------------------
-x <- factor(c("yes", "no", "yes"), levels = c("yes", "no"))
+## ----examine_data_frame--------------------------------------------------
+#See the first 6 rows
+head(examp_df)
+#See the last 6 rows
+tail(examp_df)
+#See column names
+names(examp_df)
+#see row names
+rownames(examp_df)
+#Show structure of full data frame
+str(examp_df)
+#Show number of rows and colums
+dim(examp_df)
+nrow(examp_df)
+ncol(examp_df)
+
+
+## ----factor_examples-----------------------------------------------------
+#An unorderd factor
+yn <- factor(c("yes", "no", "no", "yes", "yes"))
+yn
+
+#An ordered factor
+lmh <- factor (c("high","high","low","medium","low","medium","high"),levels=c("low","medium","high"),ordered=TRUE )
+
+
+## ----list_examples-------------------------------------------------------
+examp_list<-list(letters=c("x","y","z"),animals=c("cat","dog","bird","fish"),numbers=1:100,df=examp_df)
+examp_list
 
 
