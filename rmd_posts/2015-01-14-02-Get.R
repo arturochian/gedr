@@ -172,7 +172,7 @@ install.packages("gdata")
 #Load up gdata
 library("gdata")
 #Get an example Excel file read into R
-download.file("http://jwhollister.com/public/files/example.xlsx")
+download.file("http://jwhollister.com/public/files/example.xlsx", "example.xlsx")
 first_sheet<-read.xls("example.xlsx",sheet=1)
 second_sheet<-read.xls("example.xlsx",sheet=2)
 #Did it work?
