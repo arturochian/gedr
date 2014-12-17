@@ -139,6 +139,8 @@ str(examp_df)
 dim(examp_df)
 nrow(examp_df)
 ncol(examp_df)
+#Get summary info
+summary(examp_df)
 
 
 ## ----factor_examples-----------------------------------------------------
@@ -153,5 +155,28 @@ lmh <- factor (c("high","high","low","medium","low","medium","high"),levels=c("l
 ## ----list_examples-------------------------------------------------------
 examp_list<-list(letters=c("x","y","z"),animals=c("cat","dog","bird","fish"),numbers=1:100,df=examp_df)
 examp_list
+
+
+## ----read_csv_examp------------------------------------------------------
+#Grab data from the web
+web_df <- read.csv("http://jwhollister.com/public/files/example.csv")
+head(web_df)
+str(web_df)
+dim(web_df)
+summary(web_df)
+
+
+## ----gdata_examp---------------------------------------------------------
+#Make sure gdata is installed
+install.packages("gdata")
+#Load up gdata
+library("gdata")
+#Get an example Excel file read into R
+download.file("http://jwhollister.com/public/files/example.xlsx")
+first_sheet<-read.xls("example.xlsx",sheet=1)
+second_sheet<-read.xls("example.xlsx",sheet=2)
+#Did it work?
+first_sheet
+second_sheet
 
 

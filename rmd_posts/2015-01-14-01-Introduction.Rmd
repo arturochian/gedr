@@ -13,7 +13,7 @@ Over the course of the next two days we are going to walk through a typical data
 ##Quick Links to Exercises and R code
 My goal is to have this workshop be as hands-on as possible.  As such, there are exercises through out.  For each lesson, I will provide a list of links near the top of the post so that you can skip all the prose and jump straight to the lessons.  So, here are the links for Lesson 1.
 
-- [Lesson 1 R Code](http://jwhollister.com/gedr/rmd_posts/2015-01-14-01-Introduction.R): All the code from this post in an R Script.
+- [Lesson 1 R Code](/gedr/rmd_posts/2015-01-14-01-Introduction.R): All the code from this post in an R Script.
 - [Exercise 1](#exercise-1): RStudio Introduction.
 - [Exercise 2](#exercise-2): Functions, packages, and help
 
