@@ -6,7 +6,7 @@ highlighter:      pygments
 
 # Permalinks
 permalink:            pretty
-paginate_path:        /page:num
+paginate_path:        /gedr/page:num
 relative_permalinks:  true
 
 # Setup
@@ -20,7 +20,7 @@ author:
   name:           'Jeffrey W. Hollister'
   url:            https://twitter.com/jhollist
 
-paginate:         10
+paginate:         15
 
 timezone:         America/New_York
 

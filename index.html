@@ -28,9 +28,9 @@ title: "Intro to R:GED"
         {% if paginator.previous_page %}
         <p class="prev">
           {% if paginator.previous_page == 1 %}
-          <a href="/gedr">Previous</a>
+          <a href="{{ baseurl }}">Previous</a>
           {% else %}
-          <a href="/gedr/page{{paginator.previous_page}}"> Previous</a>
+          <a href="/page{{paginator.previous_page}}"> Previous</a>
           {% endif %}
         </p>
         {% else %}
@@ -44,7 +44,7 @@ title: "Intro to R:GED"
             {% if paginator.page == 1 %}
 <!--             <span class="current-page">1</span> -->
             {% else %}
-<!--             <a href="{{ baseurl }}/gedr">1</a> -->
+<!--             <a href="{{ baseurl }}">1</a> -->
             {% endif %}
           </li>
 
@@ -53,7 +53,7 @@ title: "Intro to R:GED"
             {% if count == paginator.page %}
             <span class="current-page">{{count}}</span>
             {% else %}
-            <a href="/gedr/page{{count}}">{{count}}</a>
+            <a href="/page{{count}}">{{count}}</a>
             {% endif %}
           </li>
           {% endfor %}
@@ -61,7 +61,7 @@ title: "Intro to R:GED"
 
         {% if paginator.next_page %}
         <p class="next">
-          <a href="/gedr/page{{paginator.next_page}}">Next</a>
+          <a href="/page{{paginator.next_page}}">Next</a>
         </p>
         {% else %}
 <!--         <p class="next disabled">
