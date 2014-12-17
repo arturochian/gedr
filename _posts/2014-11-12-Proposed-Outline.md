@@ -1,5 +1,5 @@
 ---
-title: "GED R Workshop Outline"
+title: "00 - GED R Workshop Outline"
 author: Jeffrey W. Hollister
 layout: post_page
 ---
