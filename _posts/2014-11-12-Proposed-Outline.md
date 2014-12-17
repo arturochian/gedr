@@ -1,5 +1,5 @@
 ---
-title: GED R Workshop Outline
+title: "GED R Workshop Outline"
 author: Jeffrey W. Hollister
 layout: post_page
 ---
@@ -24,10 +24,10 @@ For each of the lessons there is a blog post that describes what we are doing, p
 
 
 ### 02 - Get (9:15 am - 10:30 am)
+- Working in the console
+- Useful functions
 - Data types and structures in R
 - Reading data into R
-- Where to find data
-
 
 #### Break (10:30 am - 10:45 am)
 

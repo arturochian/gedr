@@ -12,6 +12,7 @@ The second lesson is going to start to lay the foundation for working with data 
 
 ##Quick Links to Exercises and R code
 - [Lesson 2 R Code](http://jwhollister.com/gedr/rmd_posts/2015-01-14-02-Get.R): All the code from this post in an R Script.
+- [Exercise 1](#exercise-1): Introduction to the console and basic functions
 
 ##Lesson Goals
 - Understand workflow basics
@@ -19,7 +20,6 @@ The second lesson is going to start to lay the foundation for working with data 
 - Learn some useful R functions
 - Understand the basic data structures and data types
 - Be able to read data into R from a variety of sources
-- Interact with data being served from web APIs
 
 ##More basics
 Before we jump into details on data in R we need to introduce a few of the basics about working in the console, working via scripts, and workspaces/projects.  We will also start working with some simple, yet important R functions.
@@ -129,9 +129,35 @@ For this first excercise I am actually going to ignore my workflow advice from a
 9. Create a new directory called "R"
 10. Try to add `string1` and `number1`.  What happens?  
 
+So the last question in exercise 1 was a bit of a contrived way to segue into data types and structures.  So with that last bit, what did we ask R to do?  Why did it respond the way it did?  
 
-##Data types and structures in R
+In short it has a lot to do with data types.  Let's learn some more
+
+##Data types and data structures in R
+*Borrowed liberally from Jenny Bryan's [course materials on r] (http://www.stat.ubc.ca/~jenny/STAT545A/quick-index.html) and Karthik Ram's [material from the Canberra Software Carpentry R Bootcamp](https://github.com/swcarpentry/2013-10-09-canberra).  Anything good is becuase of Jenny and Karthik.  Mistakes are all mine.*
+
+Remember that everything in R is an object.  With regards to data, those objects have some specific characteristics that help R (and us) know what kind of data we are dealing with and what kind of operations can be done on that data.  This stuff may be a bit dry, but a basic understanding will help as so much of what we do with analysis has to do with the organization and type of data we have. First, lets discuss the atomic data types.
+
+
+###Data Types
+There are 5 basic atomic classes
+
+* character
+* numeric (real or decimal)
+* integer
+* logical
+* complex
+
+| Example | Type |
+| ------- | ---- |
+| "a", "swc" | character |
+| 2, 15.5 | numeric | 
+| 2 (usually add a `L` at end to denote integer) | integer |
+| `TRUE`, `FALSE` | logical |
+| 1+4i | complex | 
+
+In this course we will deal almost exclusively with three (and these are, in my experience, by far the most common): character, numeric, and logical.
 
 ##Reading data into R
 
-##Where to find data
+##Exercise 2
