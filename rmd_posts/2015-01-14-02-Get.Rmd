@@ -53,6 +53,7 @@ R can be used as a caculator and a way to compare values.  Some examples of the 
 4<5 #Less than
 5<=5 #Less than or equal
 8>=2 #Greater than or equal
+2==2 #Equality: notice that it is TWO equal signs!
 ```
 
 That's neat, but so what...  

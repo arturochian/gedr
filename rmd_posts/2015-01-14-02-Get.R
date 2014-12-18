@@ -15,6 +15,7 @@ options(repos="http://cran.rstudio.com/")
 4<5 #Less than
 5<=5 #Less than or equal
 8>=2 #Greater than or equal
+2==2 #Equality: notice that it is TWO equal signs!
 
 
 ## ----assignment_operator-------------------------------------------------

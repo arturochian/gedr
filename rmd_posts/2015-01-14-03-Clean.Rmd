@@ -13,17 +13,76 @@ From here on out we are assuming that we have a raw data file that is ready to b
 ###Subset
 But first, lets start exploring the National Lakes Assessment data we downloaded already.  To do this we are going to be using indexing to subset both observations (the rows) and the variables (the columns).
 
-Some of the commands we know already, like `head()` and `tail()` do this already, but we need more control than that.  We get that with indexing.  In short indexing allows you to specify individual (or ranges) of rows and columns.  We can index data frames and vectors (and lists and matrices, but we aren't going to go into that).  Let's start with a vector example
+Some of the commands we know already, like `head()` and `tail()` do this already, but we need more control than that.  We get that with indexing.  In short indexing allows you to specify individual (or ranges) of rows and columns.  We can index data frames and vectors (and lists and matrices, but we aren't going to go into that).  Let's start with a vector example and build from there.
 
 ```{r indexing_examp}
 #Create a vector
-x<-c(1:10)
-#Postive indexing
-
-
+x<-c(10:19)
+x
+#Postive indexing returns just the value in the ith place
+x[7]
+#Negative indexing returns all values except the value in the ith place
+x[-3]
+#Ranges work too
+x[8:10]
+#A vector can be used to index
+#Can be numeric
+x[c(2,6,10)]
+#Can be boolean - will repeat the pattern 
+x[c(TRUE,FALSE)]
+#Can even get fancy
+x[x%%2==0]
 ```
  
+So that's kinda handy.  In practice you wouldn't likely just be asking for that information to be returned to the screen, you'd probably save the output to a new object, kind of like `evens<-x[x%%2==0]`.  Let's move on now and look at indexing data frames.
 
+Since a data frame is essentially a matrix, you need to specify an index for both the row and the column.  You can specify both and get a single value like `data_frame[row,column`],specify just the row and the get the whole row back like `data_frame[row,]` or get just the column with `data_frame[,column]`.  Let's work some examples.
+
+```{r data_frame_index}
+#Let's use one of the stock data frames in R, iris
+head(iris)
+#And grab a specific value
+iris[1,1]
+#A whole column
+petal_len<-iris[,3]
+petal_len
+#A row
+obs15<-iris[15,]
+obs15
+#Many rows
+```
+
+So that's the basics.  Still in the arena of kinda useful, but not really... Remember though that we can index vectors with other vectors and a data frame is just a collection of vectors (kinda) and that starts to get interesting.  Also remember that data frames have column names.  We can use those too.  Let's try it.
+
+```{r more_data_frame_index}
+#First, there are a couple of ways to use the column names
+iris$Petal.Length
+iris["Petal.Length"]
+#Multiple colums
+iris[c("Petal.Length","Species")]
+#Now we can combine what we have seen to do some more complex queries
+#Lets get all the data for Species with a petal length greater than 6
+big_iris<-iris[iris$Petal.Length>=6,]
+big_iris
+#Or maybe we want just the sepal widths of the virginica species
+virginica_iris<-iris$Sepal.Width[iris$Species=="virginica"]
+virginica_iris
+```
+
+Got it?!  Probably sort of.  I will admit that the syntax for subsetting data this way is a bit obtuse.  I did want to make sure you all saw it though becuase it comes up often in other peoples code and helps you get a better understanding, I think, of what you are doing.  That being said there are other options.  In base, `subset()` and also in `dplyr` which will be the next lesson.
+
+Let's take a look at the help:
+```{r subset_help}
+?subset
+```
+
+```{r subset_examp}
+#And redo what we did above
+big_iris_subset<-subset(iris,subset=Petal.Length>=6)
+big_iris_subset
+virginica_iris_subset<-subset(iris,subset=Species=="virginica",select=Sepal.Width)
+virginica_iris_subset
+```
 
 ###Reshape
 
