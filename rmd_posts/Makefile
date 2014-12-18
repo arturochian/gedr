@@ -11,5 +11,4 @@ git: $(POSTDIR)
 	git add -A :/
 	git commit -m "automatic build of site"
 	git push origin gh-pages
-	rm *.md
-	
+
