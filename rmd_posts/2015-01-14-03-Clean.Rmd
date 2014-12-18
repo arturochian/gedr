@@ -10,7 +10,7 @@ Cleaning data (or data munging, data jujitsu, data wrangling) often happens at t
 
 From here on out we are assuming that we have a raw data file that is ready to be read into R and that we have already done that (we did this in [Lesson 2:Exercise 2](/gedr/2015/01/14/02-Get/#exercise-2)).  While the data files are in pretty good shape at this point, there are often tasks that we need to do to select out portions of the data, rearranage the data, add new columns, merge multiple files, etc.  These are the tasks that we will focus on over the next two lessons.  This lesson will deal with using tools we have available to us in Base R.  Next lesson will focus on a new package `dplyr` that should make some of this work a bit easier.  
 
-###Subset
+##Subset
 But first, lets start exploring the National Lakes Assessment data we downloaded already.  To do this we are going to be using indexing to subset both observations (the rows) and the variables (the columns).
 
 Some of the commands we know already, like `head()` and `tail()` do this already, but we need more control than that.  We get that with indexing.  In short indexing allows you to specify individual (or ranges) of rows and columns.  We can index data frames and vectors (and lists and matrices, but we aren't going to go into that).  Let's start with a vector example and build from there.
@@ -50,6 +50,8 @@ petal_len
 obs15<-iris[15,]
 obs15
 #Many rows
+obs3to7<-iris[3:7,]
+obs3to7
 ```
 
 So that's the basics.  Still in the arena of kinda useful, but not really... Remember though that we can index vectors with other vectors and a data frame is just a collection of vectors (kinda) and that starts to get interesting.  Also remember that data frames have column names.  We can use those too.  Let's try it.
@@ -69,12 +71,7 @@ virginica_iris<-iris$Sepal.Width[iris$Species=="virginica"]
 virginica_iris
 ```
 
-Got it?!  Probably sort of.  I will admit that the syntax for subsetting data this way is a bit obtuse.  I did want to make sure you all saw it though becuase it comes up often in other peoples code and helps you get a better understanding, I think, of what you are doing.  That being said there are other options.  In base, `subset()` and also in `dplyr` which will be the next lesson.
-
-Let's take a look at the help:
-```{r subset_help}
-?subset
-```
+Got it?!  Probably sort of!?  I will admit that the syntax for subsetting data this way is a bit obtuse.  I did want to make sure you all saw it though becuase it comes up often in other peoples code and helps you get a better understanding, I think, of what you are doing.  That being said there are other options.  In base, `subset()` and also in `dplyr` which will be the next lesson.
 
 ```{r subset_examp}
 #And redo what we did above
@@ -84,7 +81,14 @@ virginica_iris_subset<-subset(iris,subset=Species=="virginica",select=Sepal.Widt
 virginica_iris_subset
 ```
 
-###Reshape
+So, I think that is a big improvement in the syntax over the raw indexing and certainly lends itself to more understandable code.
 
-###Modify
+##Exercise 1
 
+##Reshape and Modifying
+
+##Exercise 2
+
+##Merging Data
+
+##Exercise 3

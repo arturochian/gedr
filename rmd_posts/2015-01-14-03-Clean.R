@@ -30,6 +30,8 @@ petal_len
 obs15<-iris[15,]
 obs15
 #Many rows
+obs3to7<-iris[3:7,]
+obs3to7
 
 
 ## ----more_data_frame_index-----------------------------------------------
@@ -45,10 +47,6 @@ big_iris
 #Or maybe we want just the sepal widths of the virginica species
 virginica_iris<-iris$Sepal.Width[iris$Species=="virginica"]
 virginica_iris
-
-
-## ----subset_help---------------------------------------------------------
-?subset
 
 
 ## ----subset_examp--------------------------------------------------------
