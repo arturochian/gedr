@@ -62,9 +62,13 @@ head(virginica_iris_subset)
 categories<-sample(1:3,nrow(iris),replace=T)
 iris_cbind<-cbind(iris,categories)
 head(iris_cbind)
-
-
-## ----transform_examp-----------------------------------------------------
+#Can also use data.frame again for this
+iris_cbind_df<-data.frame
+head(iris_cbind_df)
+#Direct assignment
+iris_cbind_dollar<-iris
+iris_cbind_dollar$categories<-sample(1:3,nrow(iris),replace=T)
+head(iris_cbind_dollar)
 
 
 ## ----rbind_examp---------------------------------------------------------
@@ -74,5 +78,16 @@ rbind_df<-data.frame(a=1:3,b=c("a","b","c"),c=c(T,T,F),d=rnorm(3))
 rbind_df2<-data.frame(a=10:12,b=c("x","y","z"),c=c(F,F,F),d=rnorm(3))
 rbind_df<-rbind(rbind_df, rbind_df2)
 rbind_df
+
+
+## ----merge_example-------------------------------------------------------
+# Contrived data frame
+rbind_df_merge_me<-data.frame(a=c(1,3,10,11,14,6,23),x=rnorm(7),names=c("bob","joe","sue",NA,NA,"jeff",NA))
+# Create merge of matches
+rbind_df_merge_match<-merge(rbind_df,rbind_df_merge_me,by="a")
+rbind_df_merge_match
+# Create merge of matches and all of the first data frame
+rbind_df_merge_allx<-merge(rbind_df,rbind_df_merge_me,by="a",all.x=TRUE)
+rbind_df_merge_allx
 
 

@@ -33,6 +33,7 @@ nla_wq_subset<-subset(subset(nla_wq_subset,subset=VISIT_NO==1),
 #Lesson 3: Exercise 2
 #Merging data
 ###############################################################################
+nla_data<-merge(nla_wq_subset,nla_sites_subset,by="SITE_ID",all.x=TRUE)
 
 ###############################################################################
 #Lesson 3: Exercise 3
