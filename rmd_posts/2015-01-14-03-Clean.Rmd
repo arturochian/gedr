@@ -59,16 +59,16 @@ So that's the basics.  Still in the arena of kinda useful, but not really... Rem
 ```{r more_data_frame_index}
 #First, there are a couple of ways to use the column names
 iris$Petal.Length
-iris["Petal.Length"]
+head(iris["Petal.Length"])
 #Multiple colums
-iris[c("Petal.Length","Species")]
+head(iris[c("Petal.Length","Species")])
 #Now we can combine what we have seen to do some more complex queries
 #Lets get all the data for Species with a petal length greater than 6
 big_iris<-iris[iris$Petal.Length>=6,]
-big_iris
+head(big_iris)
 #Or maybe we want just the sepal widths of the virginica species
 virginica_iris<-iris$Sepal.Width[iris$Species=="virginica"]
-virginica_iris
+head(virginica_iris)
 ```
 
 Got it?!  Probably sort of!?  I will admit that the syntax for subsetting data this way is a bit obtuse.  I did want to make sure you all saw it though becuase it comes up often in other peoples code and helps you get a better understanding, I think, of what you are doing.  That being said there are other options.  In base, `subset()` and also in `dplyr` which will be the next lesson.
@@ -76,9 +76,9 @@ Got it?!  Probably sort of!?  I will admit that the syntax for subsetting data t
 ```{r subset_examp}
 #And redo what we did above
 big_iris_subset<-subset(iris,subset=Petal.Length>=6)
-big_iris_subset
+head(big_iris_subset)
 virginica_iris_subset<-subset(iris,subset=Species=="virginica",select=Sepal.Width)
-virginica_iris_subset
+head(virginica_iris_subset)
 ```
 
 So, I think that is a big improvement in the syntax over the raw indexing and certainly lends itself to more understandable code.
@@ -94,6 +94,39 @@ This exercise is going to focus on using what we just covered on indexing and su
 6. Last thing we are going to need to do is get a subset of the observations from `nla_wq_subset`.  We need only the lakes that with VISIT_NO equal to 1 and SITE_TYPE equal to "REF_Lake".  Keep the same name, `nla_wq_subset`, for this data frame.
 
 ##Merging Data
+Another very common clean-up/data managment task is to be able to merge data into a single data frame.  We are going to talk about several different ways to do this.  First, is adding a new column or existing vector to a data frame with `cbind()`.  Think of it as binding a column to the data frame.  We do it this way:
+
+```{r cbind_examp}
+#Create a new vector to add to the iris data frame
+categories<-sample(1:3,nrow(iris),replace=T)
+iris_cbind<-cbind(iris,categories)
+head(iris_cbind)
+```
+
+This is handy to know, but you need to be very careful with it.  First, the data in the vector you are adding needs to be in the same order as the observations in the data frame.  Also it needs to have the same number of rows (or divisible by that number of rows).  Given this limitation, their might be better ways to add a single, newly created vector to a data frame.  That is where `transform()` comes in handy.
+
+```{r transform_examp}
+```
+
+
+The next thing we might want to do is add some new rows to a data frame.  This is very handy as you might have data collected and entered at one time, and then additional observations made later that need to be added.  We can do this with `rbind()`
+
+```{r rbind_examp}
+#Let's first create a new small example data.frame
+rbind_df<-data.frame(a=1:3,b=c("a","b","c"),c=c(T,T,F),d=rnorm(3))
+#Now an example df to add
+rbind_df2<-data.frame(a=10:12,b=c("x","y","z"),c=c(F,F,F),d=rnorm(3))
+rbind_df<-rbind(rbind_df, rbind_df2)
+rbind_df
+```
+
+Now something to think about.  Could you add a vector as a new row?  Why/Why not? When/When not?
+
+
+
+
+
+
 
 ##Exercise 2
 
