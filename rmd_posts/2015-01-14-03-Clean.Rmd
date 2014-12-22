@@ -4,11 +4,22 @@ author: Jeffrey W. Hollister
 layout: post_page
 ---
 
-In my experience, most data analysis and statistics classes seem to assume that 95% of the time spent working with data is on the analysis and interpretation of that analysis and little time is spent getting data ready to analyze and, therefore, very little time is devoted to learning how to do this. However, in reality, I'd argue, the time spent is flipped with most time spent on cleaning up data and significantly less time on the analysis.    
+##Quick Links to Exercises and R code
+- [Lesson 3 R Code](/gedr/rmd_posts/2015-01-14-03-Clean.R): All the code from this post in an R Script.
+- [Exercise 1](#exercise-1): 
+- [Exercise 2](#exercise-2): 
+- [Exercise 3](#exercise-3):
+
+##Lesson Goals
+- Understand and use various subsetting methods (indexing, vectors, and `subset()`).
+- Be able to merge data frames by simply combining rows and columns
+- Use `merge()` to combine data frames by a common key.
+- Do some basic reshaping and modifying data frames.
+
+
+In this third lesson we are going to start working maninpulating and cleaning up our data frames.  We are spending some significant time on this because, in my experience, most data analysis and statistics classes seem to assume that 95% of the time spent working with data is on the analysis and interpretation of that analysis and little time is spent getting data ready to analyze.  However, in reality, I'd argue, the time spent is flipped with most time spent on cleaning up data and significantly less time on the analysis.    
 
 Cleaning data (or data munging, data jujitsu, data wrangling) often happens at two points.  The first stage is getting raw data files ready to be read in by the computer.  This can be quite the challenge.  For the purposes of this workshop we are not going to focus on that side too much.  The data files we are using are in a clean enough format to be read in directly.  If you want to learn more about some best practices in maintaining good clean data files, I'd point you to two places.  First is some materials from [Data Carpentry on working with spreadsheets](https://github.com/datacarpentry/datacarpentry/blob/master/lessons/excel/ecology_spreadsheets.md) and second is [Hadley Wickham's Tidy Data paper](http://www.jstatsoft.org/v59/i10/paper).
-
-From here on out we are assuming that we have a raw data file that is ready to be read into R and that we have already done that (we did this in [Lesson 2:Exercise 2](/gedr/2015/01/14/02-Get/#exercise-2)).  While the data files are in pretty good shape at this point, there are often tasks that we need to do to select out portions of the data, rearranage the data, add new columns, merge multiple files, etc.  These are the tasks that we will focus on over the next two lessons.  This lesson will deal with using tools we have available to us in Base R.  Next lesson will focus on a new package `dplyr` that should make some of this work a bit easier.  
 
 ##Subset
 But first, lets start exploring indexing to subset both observations (the rows) and variables (the columns).
